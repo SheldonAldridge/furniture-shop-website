@@ -15,7 +15,7 @@ body{
 
 @font-face {
     font-family:Perpetua Titling MT;
-    src: url(assets/fonts/PERTIBD.TTF);
+    src: url(../assets/fonts/PERTIBD.TTF);
 }
 
 .navbar-brand{
@@ -33,9 +33,38 @@ body{
 .nav-item{
     padding-left:10rem;
     width:20rem;
-    font-size:
+    font-size:20px;
 }
 
 .shop{
     padding-left:60rem;  
+}
+
+.carousel-inner,.carousel-item img{
+    height: 70rem;
+}
+
+.h1{
+    position: absolute;
+    margin-top: 61rem;
+    margin-left: 60rem;
+    z-index: 1;
+    font-size: 50px;
+    color: rgba(47, 15, 2, 0.5);
+}
+
+.carousel-control-prev-icon,.carousel-control-next-icon{
+    filter: invert(100%) sepia(44%) saturate(1626%) hue-rotate(345deg) brightness(103%) contrast(103%);
+}
+
+.carousel-indicators .active{
+background-color: var(--black-bean-color);
+width:3rem;
+}
+
+.header{
+    font-size:50px;
+    text-align: center;
+    color: var(--french-bistre-color);
+    margin-top: 3rem;
 }
