@@ -122,10 +122,18 @@ width:3rem;
     width:10rem;
 }
 
-.hl{
+.coll-hl{
     border-left: 1px solid var(--camel-color);
     height:8rem;
     position: absolute;
-    margin-top: -8rem;
-    margin-left: 77rem;
+    margin-top: 1rem;
+    margin-left: 27rem;
+}
+
+.blog-hl{
+    border-left: 1px solid var(--camel-color);
+    height:8rem;
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 45rem;
 }
