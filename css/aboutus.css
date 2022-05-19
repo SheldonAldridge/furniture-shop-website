@@ -144,6 +144,45 @@ body{
     color:var(--french-bistre-color);
 }
 
+.ben-details{
+    position: absolute;
+    width:10rem;
+    margin-top: 15rem;
+    margin-left: 8rem;
+    background-color: var(--black-bean-color);
+    color: var(--camel-color);
+    display: none;
+    animation: moveToRight 0.3s  1 forwards;
+}
+
+@keyframes moveToRight {
+    0% {
+        width:0;
+    }
+    100% {
+        width:10rem;
+    }
+}
+
+@keyframes closeleft {
+    100% {
+        width:10rem;
+    }
+    0% {
+        width:0;
+    }
+}
+
+.ben-details h6{
+    text-decoration: underline;
+    margin-top: 1rem;
+    font-size: 15px;
+    text-align: center;
+}
+
+.ben-details p{
+    text-align: center;
+}
 
 .footer{
     background-color: var(--dark-sienna-color);
