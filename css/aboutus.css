@@ -44,8 +44,30 @@ body{
     flex-direction: row;
 }
 
+.team h1{
+    color: var(--camel-color);
+    text-align: center;
+    margin-left: 67rem;
+    position: absolute;
+    margin-top: 3rem;
+    text-decoration: underline;
+}
+
 .team img{
     width:10rem;
+    height:10rem;
+    margin-left:15rem;
+    margin-top:10rem;
+    border-radius: 100%;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+.name{
+    position: relative;
+    margin-left: -12rem;
+    margin-top: 25rem;
+    text-align: center;
 }
 
 .footer{
