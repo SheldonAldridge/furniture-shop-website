@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
 body{
     box-sizing: border-box;
     font-family: Perpetua Titling MT, sans-serif;
@@ -14,6 +16,8 @@ body{
 @font-face {
     font-family:Perpetua Titling MT;
     src: url(../assets/fonts/PERTIBD.TTF);
+    font-family:Poor Richard;
+    src: url(../assets/fonts/POORICH.TTF);
 }
 
 .navbar-brand{
@@ -38,16 +42,30 @@ body{
     padding-left:60rem;  
 }
 
+.name{
+    position: relative;
+    margin-left: 3rem;
+    margin-top: 5rem;
+    width: 16rem;
+}
+
+.name h4{
+    margin-left: 4rem;
+    width:12rem;
+    text-align: center;
+}
 
 .team{
     display: flex;
     flex-direction: row;
+    margin-left: 30rem;
+    
 }
 
 .team h1{
     color: var(--camel-color);
     text-align: center;
-    margin-left: 67rem;
+    margin-left: 40rem;
     position: absolute;
     margin-top: 3rem;
     text-decoration: underline;
@@ -56,19 +74,76 @@ body{
 .team img{
     width:10rem;
     height:10rem;
-    margin-left:15rem;
+    margin-left:5rem;
     margin-top:10rem;
     border-radius: 100%;
     filter: grayscale(100%);
     cursor: pointer;
 }
 
-.name{
-    position: relative;
-    margin-left: -12rem;
-    margin-top: 25rem;
+.beginnings{
     text-align: center;
+    margin-left: 3rem;
+    margin-top:10rem;
 }
+
+.beginnings h1{
+    color: var(--camel-color);
+    text-decoration: underline;
+}
+
+.image1{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+}
+
+.image1 img{
+    width:40rem;
+    height: 50rem;
+    margin-left: 35rem;
+}
+
+.image1 p{
+    width:40rem;
+    text-align: justify;
+    font-size: 30px;
+    margin-left: 8rem;
+    margin-top: 2rem;
+    font-family:Poor Richard;
+    color:var(--french-bistre-color);
+}
+
+.images2 img{
+    width:50rem;
+    height:30rem;
+}
+
+.values{
+    margin-top: 10rem;
+    margin-left:65rem;
+}
+
+.values h1{
+    color: var(--camel-color);
+    text-decoration: underline;
+}
+
+.images2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    margin-left: -37rem;
+}
+
+.images2 p{
+    width: 40rem;
+    font-size: 30px;
+    margin-left: 8rem;
+    font-family:Poor Richard;
+    color:var(--french-bistre-color);
+}
+
 
 .footer{
     background-color: var(--dark-sienna-color);
