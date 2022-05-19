@@ -1,0 +1,92 @@
+body{
+    box-sizing: border-box;
+    font-family: Perpetua Titling MT, sans-serif;
+}
+
+:root{
+    --dark-sienna-color:#2F0F02;
+    --black-bean-color:#421803;
+    --french-bistre-color:#796B5D;
+    --camel-color:#B99C7E;
+    --black-coffee-color:#B99C7E;
+}
+
+@font-face {
+    font-family:Perpetua Titling MT;
+    src: url(../assets/fonts/PERTIBD.TTF);
+}
+
+.navbar-brand{
+    width:4rem;
+}
+
+.navbar, .navbar-expand-lg,.navbar-light,.bg-light {
+    background-color: var(--dark-sienna-color)!important;
+    height:4rem;
+}
+
+.nav-link{
+    color:var(--camel-color)!important;
+}
+
+.nav-item{
+    padding-left:10rem;
+    width:20rem;
+}
+
+.shop{
+    padding-left:60rem;  
+}
+
+
+.team{
+    display: flex;
+    flex-direction: row;
+}
+
+.team img{
+    width:10rem;
+}
+
+.footer{
+    background-color: var(--dark-sienna-color);
+    height:160px;
+    margin-top: 10rem;
+}
+
+.container-footer{
+    display: flex;
+    flex-direction: row;
+    margin-left:50rem;
+}
+
+.collection h3,.blog h3,.contact h3{
+    color: var(--camel-color);
+    text-decoration: underline;
+    padding-top:1rem;
+    padding-left:10rem;
+}
+
+.list-group{
+    list-style-type: none;
+    text-align: justify;
+    color: var(--camel-color);
+    margin-left:10rem;
+    width:10rem;
+}
+
+.coll-hl{
+    border-left: 1px solid var(--camel-color);
+    height:8rem;
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 27rem;
+}
+
+.blog-hl{
+    border-left: 1px solid var(--camel-color);
+    height:8rem;
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 45rem;
+}
