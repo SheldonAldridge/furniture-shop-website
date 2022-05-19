@@ -151,8 +151,54 @@ body{
     margin-left: 8rem;
     background-color: var(--black-bean-color);
     color: var(--camel-color);
+    font-family:Arial, Helvetica, sans-serif;
     display: none;
-    animation: moveToRight 0.3s  1 forwards;
+    animation: moveToRight 1s  1 forwards;
+}
+
+.lucy-details{
+    position: absolute;
+    width:10rem;
+    margin-top: 15rem;
+    margin-left: 27rem;
+    background-color: var(--black-bean-color);
+    color: var(--camel-color);
+    font-family:Arial, Helvetica, sans-serif;
+    display: none;
+    animation: moveToRight 1s  1 forwards;
+}
+
+.castle-details{
+    position: absolute;
+    margin-top: 15rem;
+    margin-left: 46rem;
+    background-color: var(--black-bean-color);
+    color: var(--camel-color);
+    display: none;
+    font-family:Arial, Helvetica, sans-serif;
+    animation: moveToRight 1s  1 forwards;
+}
+
+.brett-details{
+    position: absolute;
+    margin-top: 15rem;
+    margin-left: 65rem;
+    background-color: var(--black-bean-color);
+    color: var(--camel-color);
+    display: none;
+    font-family:Arial, Helvetica, sans-serif;
+    animation: moveToRight 1s  1 forwards;
+}
+
+.matthew-details{
+    position: absolute;
+    margin-top: 15rem;
+    margin-left: 84rem;
+    background-color: var(--black-bean-color);
+    color: var(--camel-color);
+    display: none;
+    font-family:Arial, Helvetica, sans-serif;
+    animation: moveToRight 1s  1 forwards;
 }
 
 @keyframes moveToRight {
@@ -173,15 +219,17 @@ body{
     }
 }
 
-.ben-details h6{
+.ben-details h6,.lucy-details h6,.castle-details h6,.brett-details h6,.matthew-details h6{
     text-decoration: underline;
     margin-top: 1rem;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
 }
 
-.ben-details p{
-    text-align: center;
+.ben-details p,.lucy-details p,.castle-details p,.brett-details p,.matthew-details p{
+    text-align: left;
+    margin-left:1rem;
+    width:8rem;
 }
 
 .footer{
