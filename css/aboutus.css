@@ -63,12 +63,11 @@ body{
 }
 
 .team h1{
-    color: var(--camel-color);
+    color: var(--french-bistre-color);
     text-align: center;
     margin-left: 40rem;
     position: absolute;
     margin-top: 3rem;
-    text-decoration: underline;
 }
 
 .team img{
@@ -88,8 +87,7 @@ body{
 }
 
 .beginnings h1{
-    color: var(--camel-color);
-    text-decoration: underline;
+    color: var(--french-bistre-color);
 }
 
 .image1{
@@ -125,8 +123,7 @@ body{
 }
 
 .values h1{
-    color: var(--camel-color);
-    text-decoration: underline;
+    color: var(--french-bistre-color);
 }
 
 .images2{
