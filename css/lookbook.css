@@ -57,9 +57,22 @@ body{
     margin-top: 3rem;
 }
 
+.row2-container{
+    position: absolute;
+    margin-top: -94rem;
+    z-index: 1;
+    animation: slideleft 1s 1 forwards;
+    display: none;
+}
+
+@keyframes slideleft {
+    0% {padding-left: 100rem;}
+
+    100% {padding-left: 0rem;}
+}
+
 .row{
     width:100rem
-    
 }
 
 .elephant,.xangai{
@@ -76,6 +89,12 @@ body{
     width: 35rem;
 }
 
+.prod-nav{
+    position: relative;
+    display: block;
+    z-index: 2;
+}
+
 .num-nav{
     display: flex;
     flex-direction: row;
@@ -89,6 +108,7 @@ body{
     color: var(--french-bistre-color);
     font-size: 30px;
     margin-top: -0.4rem;
+    cursor: pointer;
 }
 
 .right-btn img{
