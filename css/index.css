@@ -19,12 +19,13 @@ body{
 }
 
 .navbar-brand{
-    width:4rem;
+    width:5rem;
+    object-fit: cover;
 }
 
 .navbar {
     background-color: var(--dark-sienna-color)!important;
-    height:4rem;
+    height:5rem;
 
 }
 
