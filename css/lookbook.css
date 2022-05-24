@@ -58,14 +58,6 @@ body{
     margin-top: 3rem;
 }
 
-[data-component = "slideshow"].row{
-    display: none;
-}
-
-[data-component = "slideshow"].row.active{
-    display: block;
-}
-
 .container{
     margin-left: 25rem;
 }
@@ -82,7 +74,6 @@ body{
     position: absolute;
     margin-top: -94rem;
     z-index: 1;
-    animation: slideleft 1s 1 forwards;
 }
 
 @keyframes slideleft {
@@ -120,7 +111,7 @@ body{
 .num-nav{
     display: flex;
     flex-direction: row;
-    margin-left: 40rem;
+    margin-left: 70rem;
     border-radius: 1rem;
     width: 1rem;
 }
