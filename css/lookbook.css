@@ -58,6 +58,14 @@ body{
     margin-top: 3rem;
 }
 
+[data-component = "slideshow"].row{
+    display: none;
+}
+
+[data-component = "slideshow"].row.active{
+    display: block;
+}
+
 .container{
     margin-left: 25rem;
 }
@@ -75,7 +83,6 @@ body{
     margin-top: -94rem;
     z-index: 1;
     animation: slideleft 1s 1 forwards;
-    display: none;
 }
 
 @keyframes slideleft {
@@ -93,7 +100,6 @@ body{
 
 .elephant,.xangai{
     position: absolute;
-    display: none;
 }
 
 .elephant{
@@ -154,3 +160,45 @@ body{
 }
 
 
+.footer{
+    background-color: var(--dark-sienna-color);
+    height:160px;
+    margin-top: 10rem;
+}
+
+.container-footer{
+    display: flex;
+    flex-direction: row;
+    margin-left:50rem;
+}
+
+.collection h3,.blog h3,.contact h3{
+    color: var(--camel-color);
+    text-decoration: underline;
+    padding-top:1rem;
+    padding-left:10rem;
+}
+
+.list-group{
+    list-style-type: none;
+    text-align: justify;
+    color: var(--camel-color);
+    margin-left:10rem;
+    width:10rem;
+}
+
+.coll-hl{
+    border-left: 1px solid var(--camel-color);
+    height:8rem;
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 27rem;
+}
+
+.blog-hl{
+    border-left: 1px solid var(--camel-color);
+    height:8rem;
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 45rem;
+}
