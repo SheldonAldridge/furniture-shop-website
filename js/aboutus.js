@@ -95,26 +95,26 @@ brettDetails.addEventListener('mouseout', function mouseoutBrett(){
     }
 })
 
-//get matthew dtails from HTML elemental
-let matthewDetails = document.querySelector('.matthew-details');
-let matthew = document.querySelector('.matthew');
-let mathewName = document.querySelector('.header-name-matthew');
+//get sheldon dtails from HTML elemental
+let sheldonDetails = document.querySelector('.sheldon-details');
+let sheldon = document.querySelector('.sheldon');
+let sheldonName = document.querySelector('.header-name-sheldon');
 
-//mouse hover event for matthew-details to appear
-matthew.addEventListener('mouseover', function mouseoverMatthew(){
-    if(matthew){
-        matthewDetails.style.display ="block";
-        matthewDetails.style.cursor ="pointer";
-        matthew.style.display ="none";
-        mathewName.style.display ="none";
+//mouse hover event for sheldon-details to appear
+sheldon.addEventListener('mouseover', function mouseoverSheldon(){
+    if(sheldon){
+        sheldonDetails.style.display ="block";
+        sheldonDetails.style.cursor ="pointer";
+        sheldon.style.display ="none";
+        sheldonName.style.display ="none";
     }
 })
 
 //mouse out event for mathew-details to disappear
-matthewDetails.addEventListener('mouseout', function mouseoutMatthew(){
-    if(matthewDetails){
-        matthewDetails.style.display ="none";
-        matthew.style.display ="block";
-        mathewName.style.display ="block";
+sheldonDetails.addEventListener('mouseout', function mouseoutSheldon(){
+    if(sheldonDetails){
+        sheldonDetails.style.display ="none";
+        sheldon.style.display ="block";
+        sheldonName.style.display ="block";
     }
 })
