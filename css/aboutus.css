@@ -86,6 +86,7 @@ body{
     border-radius: 100%;
     filter: grayscale(100%);
     cursor: pointer;
+    object-fit: cover;
 }
 
 .beginnings{
