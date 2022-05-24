@@ -1,3 +1,4 @@
+
 //get vairaibles for slide
 let row = document.querySelector(".row");
 let rowSlide = document.querySelectorAll(".rowslide");
@@ -27,8 +28,8 @@ two.addEventListener('click', function rightbtn(){
 leftBtn.addEventListener('click',function leftbtn(){
     if(leftBtn){
         row.style.display="flex";
-        rowSlide.style.animation="slideleft 1s 1 forwards";
         row2Container.style.display="none";
         leftBtn.style.display = "none";
     }
 })
+
