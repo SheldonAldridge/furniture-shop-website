@@ -26,7 +26,6 @@ body{
 .navbar {
     background-color: var(--dark-sienna-color)!important;
     height:5rem;
-
 }
 
 .nav-link{
