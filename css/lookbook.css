@@ -76,16 +76,76 @@ body{
     position: absolute;
     margin-top: -99rem;
     margin-left: 32rem;
+    display: none;
+}
+
+.close{
+    margin-left: 78rem;
+    margin-top: 1rem;
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--black-coffee-color);
+    cursor: pointer;
+}
+
+.bed-two,.bed-three{
+    position: absolute;
+    display: none;
 }
 
 .card-titel{
-    margin-top: -5rem;
+    margin-top: -3rem;
     font-size: 25px;
+    position: absolute;
 }
 
 .card-text{
     font-size: 20px;
     color: var(--french-bistre-color);
+    display: flex;
+    flex-direction: row;
+}
+
+.el-color,.cream-color,.blue-color{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.blue-color{
+    background-color: #000080;
+}
+
+.el-color{
+    background-color: #d3cabb;
+}
+
+.cream-color{
+    background-color: #e7e5bb;
+}
+
+.el-color:hover,.cream-color:hover,.blue-color:hover{
+    animation: scaleUp 0.3s 1;
+}
+
+@keyframes scaleUp {
+    0% {transform: scale(1);}
+
+    100% {transform: scale(1.5);}
+}
+
+.el-color,.cream-color{
+    margin-left: 1rem;
+}
+
+.el-color,.cream-color,.blue-color{
+    z-index: 1;
+}
+
+.price{
+ margin-top:2rem;
+ margin-left:-4rem;
 }
 
 .fav-cart{
@@ -98,18 +158,12 @@ body{
     background-color: var(--camel-color);
     color: var(--black-bean-color);
     font-size: 20px;
+    margin-left:-1rem;
 }
 
-.red-heart,.black-heart{
-    position: absolute;
-    margin-left: -3rem;
-    margin-top:0.3rem;
-    width:2rem;
-    cursor: pointer;
-}
-
-.black-heart{
-    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+.btn:hover, .btn-light:hover{
+    background-color: var(--black-bean-color);
+    color: var(--camel-color);
 }
 
 @keyframes slideright {
@@ -206,4 +260,10 @@ body{
     position: absolute;
     margin-top: 1rem;
     margin-left: 45rem;
+}
+
+@keyframes openup {
+    0% {transform: scale(0);}
+
+    100% {transform: scale(1);}
 }
