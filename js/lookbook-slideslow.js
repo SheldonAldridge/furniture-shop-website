@@ -1,35 +1,20 @@
+let slideIndex = 1;
+showSlide(slideIndex);
 
-//get vairaibles for slide
-let row = document.querySelector(".row");
-let rowSlide = document.querySelectorAll(".rowslide");
-let row2Container = document.querySelector(".row2-container");
-let rightBtn = document.querySelector(".right-btn");
-let leftBtn = document.querySelector(".left-btn");
-let one = document.querySelector(".one");
-let two = document.querySelector(".two");
+function plusSlide(n){
+    showSlide(slideIndex += n);
+}
 
-//event listener for pressing right button
-
-rightBtn.addEventListener('click', function rightbtn(){
-    if(rightBtn){
-        row2Container.style.display = "block";
-        leftBtn.style.display = "block";
+function showSlide(n){
+    let i;
+    let x = document.getElementsByClassName("row-container");
+    let one = document.querySelector(".one");
+    if(n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length};
+    
+    for(i=0; i < x.length; i++){
+        x[i].style.display = "none";
     }
-})
-
-//event listener for pressing 2
-two.addEventListener('click', function rightbtn(){
-    if(two){
-        row2Container.style.display = "block";
-        leftBtn.style.display = "block";
-    }
-})
-
-leftBtn.addEventListener('click',function leftbtn(){
-    if(leftBtn){
-        row.style.display="flex";
-        row2Container.style.display="none";
-        leftBtn.style.display = "none";
-    }
-})
-
+    x[slideIndex-1].style.display = "block";
+    x[slideIndex-1].style.animation = "slideright 1s 1";
+}
