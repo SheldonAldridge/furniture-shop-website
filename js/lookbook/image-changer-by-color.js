@@ -77,17 +77,208 @@ bedtwo.addEventListener('click', function mirandaOpen(){
     }
 });
 
-anthracite.addEventListener('click', function blue(){
+anthracite.addEventListener('click', function anthracite(){
     if(anthracite){
         mirandaOne.style.display = "block";
         mirandaTwo.style.display = "none";
     }
 });
 
-lime.addEventListener('click', function blue(){
+lime.addEventListener('click', function lime(){
     if(lime){
         mirandaOne.style.display = "none";
         mirandaTwo.style.display = "block";
     }
 });
 
+let miuzzaClose = document.querySelector(".miuzza-close");
+
+let bedthree = document.querySelector(".bed3");
+
+let miuzzaBed = document.querySelector(".miuzza-bed");
+
+let cream = document.querySelector(".vienna-cream-color");
+let deepBlue = document.querySelector(".deep-blue-color");
+
+let miuzzaOne = document.querySelector(".miuzza-one");
+let miuzzaTwo = document.querySelector(".miuzza-two");
+
+miuzzaClose.addEventListener('click', function miuzzaClose(){
+    if(mirandaClose){
+        miuzzaBed.style.display = "none";
+    }
+});
+
+bedthree.addEventListener('click', function mirandaOpen(){
+    if(bedthree){
+        miuzzaBed.style.display = "block";
+        miuzzaBed.style.animation = "openup 0.3s 1";
+        miuzzaTwo.style.display = "none";
+    }
+});
+
+cream.addEventListener('click', function cream(){
+    if(cream){
+        miuzzaOne.style.display = "block";
+        miuzzaTwo.style.display = "none";
+    }
+});
+
+deepBlue.addEventListener('click', function deepBlue(){
+    if(deepBlue){
+        miuzzaOne.style.display = "none";
+        miuzzaTwo.style.display = "block";
+    }
+});
+
+let normaClose = document.querySelector(".norma-close");
+
+let bedfour = document.querySelector(".bed4");
+
+let normaBed = document.querySelector(".norma-bed");
+
+let beige = document.querySelector(".vienna-Beige-color");
+let viennadeepBlue = document.querySelector(".vienna-deep-blue-color");
+let viennelephant = document.querySelector(".vienna-elephant-color");
+
+let normaOne = document.querySelector(".norma-one");
+let normaTwo = document.querySelector(".norma-two");
+let normaThree = document.querySelector(".norma-three");
+
+normaClose.addEventListener('click', function normaClose(){
+    if(normaClose){
+        normaBed.style.display = "none";
+    }
+});
+
+bedfour.addEventListener('click', function normaOpen(){
+    if(bedfour){
+        normaBed.style.display = "block";
+        normaOne.style.display = "block";
+        normaBed.style.animation = "openup 0.3s 1";
+        normaTwo.style.display = "none";
+        normaThree.style.display = "none";
+    }
+});
+
+beige.addEventListener('click', function beige(){
+    if(beige){
+        normaOne.style.display = "block";
+        normaTwo.style.display = "none";
+        normaThree.style.display = "none";
+    }
+});
+
+viennadeepBlue.addEventListener('click', function viennadeepBlue(){
+    if(viennadeepBlue){
+        normaOne.style.display = "none";
+        normaTwo.style.display = "block";
+        normaThree.style.display = "none";
+    }
+});
+
+viennelephant.addEventListener('click', function viennelephant(){
+    if(viennelephant){
+        normaOne.style.display = "none";
+        normaTwo.style.display = "none";
+        normaThree.style.display = "block";
+    }
+});
+
+let alphaClose = document.querySelector(".alpha-close");
+
+let bedSideOne = document.querySelector(".bedside1");
+
+let alphaBedSide = document.querySelector(".alpha-bedside");
+
+let lightOak = document.querySelector(".light-oak-color");
+let wedge = document.querySelector(".wedge-color");
+
+
+let alphaOne = document.querySelector(".alpha-one");
+let alphaTwo = document.querySelector(".alpha-two");
+
+
+alphaClose.addEventListener('click', function alphaClose(){
+    if(alphaClose){
+        alphaBedSide.style.display = "none";
+    }
+});
+
+bedSideOne.addEventListener('click', function alphaOpen(){
+    if(bedSideOne){
+        alphaBedSide.style.display = "block";
+        alphaBedSide.style.animation = "openup 0.3s 1";
+        alphaOne.style.display = "block";
+        alphaTwo.style.display = "none";
+    }
+});
+
+lightOak.addEventListener('click', function lightOak(){
+    if(lightOak){
+        alphaOne.style.display = "block";
+        alphaTwo.style.display = "none";
+    }
+});
+
+wedge.addEventListener('click', function wedge(){
+    if(wedge){
+        alphaOne.style.display = "none";
+        alphaTwo.style.display = "block";
+    }
+});
+
+let cyrusClose = document.querySelector(".cyrus-close");
+
+let bedSideTwo = document.querySelector(".bedside2");
+
+let cyrusBedSide = document.querySelector(".cyrus-bedside");
+
+let whiteOak = document.querySelector(".white-oak-color");
+let cyrusWedge = document.querySelector(".cyrus-wedge-color");
+let cyruslight = document.querySelector(".cyrus-light-oak-color");
+
+let cyrusOne = document.querySelector(".cyrus-one");
+let cyrusTwo = document.querySelector(".cyrus-two");
+let cyrusThree = document.querySelector(".cyrus-three");
+
+
+cyrusClose.addEventListener('click', function cyrusClose(){
+    if(cyrusClose){
+        cyrusBedSide.style.display = "none";
+    }
+});
+
+bedSideTwo.addEventListener('click', function cyrusOpen(){
+    if(bedSideTwo){
+        cyrusBedSide.style.display = "block";
+        cyrusBedSide.style.animation = "openup 0.3s 1";
+        cyrusOne.style.display = "block";
+        cyrusTwo.style.display = "none";
+        cyrusThree.style.display = "none";
+    }
+});
+
+cyrusWedge.addEventListener('click', function cyrusWedge(){
+    if(cyrusWedge){
+        cyrusOne.style.display = "block";
+        cyrusTwo.style.display = "none";
+        cyrusThree.style.display = "none";
+    }
+});
+
+whiteOak.addEventListener('click', function whiteOak(){
+    if(whiteOak){
+        cyrusOne.style.display = "none";
+        cyrusTwo.style.display = "block";
+        cyrusThree.style.display = "none";
+    }
+});
+
+cyruslight.addEventListener('click', function cyruslightOak(){
+    if(cyruslight){
+        cyrusOne.style.display = "none";
+        cyrusTwo.style.display = "none";
+        cyrusThree.style.display = "block";
+    }
+});
