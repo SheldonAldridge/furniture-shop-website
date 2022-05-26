@@ -107,7 +107,12 @@ body{
     flex-direction: row;
 }
 
-.el-color,.cream-color,.blue-color,.anthracite-color,.lime-color{
+/*
+FURNITURE COLOURS
+*/
+.el-color,.cream-color,.blue-color,.anthracite-color,.lime-color,.vienna-cream-color,
+.deep-blue-color,.vienna-Beige-color,.vienna-elephant-color,.vienna-deep-blue-color,
+.light-oak-color,.wedge-color,.white-oak-color,.cyrus-light-oak-color,.white-oak-color,.cyrus-wedge-color{
     width: 3rem;
     height: 3rem;
     border-radius: 100%;
@@ -134,8 +139,44 @@ body{
     background-color:#6b8f00;
 }
 
-.el-color:hover,.cream-color:hover,.blue-color:hover,.anthracite-color,
-.lime-color{
+.vienna-cream-color{
+    background-color:#eddcc2;
+}
+
+.deep-blue-color{
+    background-color:#072A6C;
+}
+
+.vienna-deep-blue-color{
+    background-color:#4278AF;
+}
+
+.vienna-Beige-color{
+    background-color:#d9ad78;
+}
+
+.vienna-elephant-color{
+    background-color:#8c7c6c;
+}
+
+.light-oak-color,.cyrus-light-oak-color{
+    background-color:#d1af84;
+}
+
+.wedge-color,.cyrus-wedge-color{
+    background-color:#271910;
+}
+
+.white-oak-color{
+    background-color:#ce9f6f;
+}
+
+
+.el-color:hover,.cream-color:hover,.blue-color:hover,.anthracite-color:hover,
+.lime-color:hover,.vienna-cream-color:hover,.deep-blue-color:hover,.vienna-Beige-color:hover,
+.vienna-elephant-color:hover,.vienna-deep-blue-color:hover,.light-oak-color:hover,
+.wedge-color:hover,.white-oak-color:hover.cyrus-light-oak-color:hover,.white-oak-color:hover,
+.cyrus-wedge-color:hover{
     animation: scaleUp 0.3s 1;
 }
 
@@ -145,13 +186,19 @@ body{
     100% {transform: scale(1.5);}
 }
 
-.el-color,.cream-color,.lime-color{
+.el-color,.cream-color,.lime-color,.deep-blue-color,.vienna-deep-blue-color,
+.vienna-elephant-color,.wedge-color,.white-oak-color,.cyrus-light-oak-color{
     margin-left: 1rem;
 }
+
 
 .el-color,.cream-color,.blue-color{
     z-index: 1;
 }
+
+/*
+FURNITURE COLOURS
+*/
 
 .price{
  margin-top:2rem;
