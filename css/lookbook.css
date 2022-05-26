@@ -79,6 +79,14 @@ body{
     margin-left: 32rem;
 }
 
+.miranda-one,.miranda-two{
+    position: absolute;
+}
+
+.miranda-bed{
+    width:80rem;
+}
+
 .close{
     margin-left: 78rem;
     margin-top: 1rem;
