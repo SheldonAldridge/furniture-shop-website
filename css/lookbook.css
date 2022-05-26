@@ -72,21 +72,6 @@ body{
     box-shadow: 3px 3px 6px black;
 }
 
-.card{
-    position: absolute;
-    display: none;
-    margin-top: -99rem;
-    margin-left: 32rem;
-}
-
-.miranda-one,.miranda-two{
-    position: absolute;
-}
-
-.miranda-bed{
-    width:80rem;
-}
-
 .close{
     margin-left: 78rem;
     margin-top: 1rem;
@@ -94,6 +79,14 @@ body{
     font-weight: bolder;
     color: var(--black-coffee-color);
     cursor: pointer;
+}
+
+.card{
+    position: absolute;
+    display: none;
+    margin-top: -99rem;
+    margin-left: 32rem;
+    width:80rem;
 }
 
 .bed-two,.bed-three{
