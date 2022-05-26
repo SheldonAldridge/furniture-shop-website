@@ -1,5 +1,5 @@
 let close = document.querySelector(".close");
-let card = document.querySelector(".card");
+let corinCard = document.querySelector(".corin-bed");
 
 let bed1 = document.querySelector(".bed1");
 let corinBed = document.querySelector(".corin-bed");
@@ -14,14 +14,14 @@ let bedThree = document.querySelector(".bed-three");
 
 close.addEventListener('click', function close(){
     if(close){
-        card.style.display = "none";
+        corinCard.style.display = "none";
     }
 });
 
 bed1.addEventListener('click', function open(){
     if(bed1){
-        corinBed.style.display = "block";
-        corinBed.style.animation = "openup 0.3s 1";
+        corinCard.style.display = "block";
+        corinCard.style.animation = "openup 0.3s 1";
     }
 });
 
@@ -73,9 +73,21 @@ bedtwo.addEventListener('click', function mirandaOpen(){
     if(bedtwo){
         mirandaBed.style.display = "block";
         mirandaBed.style.animation = "openup 0.3s 1";
-        mirandaTwo.style.position = "relative";
+        mirandaTwo.style.display = "none";
     }
 });
 
+anthracite.addEventListener('click', function blue(){
+    if(anthracite){
+        mirandaOne.style.display = "block";
+        mirandaTwo.style.display = "none";
+    }
+});
 
+lime.addEventListener('click', function blue(){
+    if(lime){
+        mirandaOne.style.display = "none";
+        mirandaTwo.style.display = "block";
+    }
+});
 
