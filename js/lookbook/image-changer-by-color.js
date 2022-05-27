@@ -518,3 +518,44 @@ jeanTaupe.addEventListener('click', function jeanTaupe(){
         jeanTwo.style.display = "block";
     }
 });
+
+let maximeClose = document.querySelector(".maxime-close");
+
+let chairThree = document.querySelector(".chair3");
+
+let chairCardThree = document.querySelector(".maxime-chair");
+
+let maximeEcru = document.querySelector(".maxime-ecru-color");
+let maximeLichtgrijs = document.querySelector(".maxime-lichtgrijs-color");
+
+let maximeOne = document.querySelector(".maxime-one");
+let maximeTwo = document.querySelector(".maxime-two");
+
+maximeClose.addEventListener('click', function maximeClose(){
+    if(maximeClose){
+        chairCardThree.style.display = "none";
+    }
+});
+
+chairThree.addEventListener('click', function chairThree(){
+    if(chairThree){
+        chairCardThree.style.display = "block";
+        chairCardThree.style.animation = "openup 0.3s 1";
+        maximeOne.style.display = "block";
+        maximeTwo.style.display = "none";
+    }
+});
+
+maximeEcru.addEventListener('click', function maximeEcru(){
+    if(maximeEcru){
+        maximeOne.style.display = "block";
+        maximeTwo.style.display = "none";
+    }
+});
+
+maximeLichtgrijs.addEventListener('click', function maximeLichtgrijs(){
+    if(maximeLichtgrijs){
+        maximeOne.style.display = "none";
+        maximeTwo.style.display = "block";
+    }
+});
