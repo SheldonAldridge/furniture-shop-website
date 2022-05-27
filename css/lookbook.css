@@ -113,7 +113,11 @@ FURNITURE COLOURS
 .el-color,.cream-color,.blue-color,.anthracite-color,.lime-color,.vienna-cream-color,
 .deep-blue-color,.vienna-Beige-color,.vienna-elephant-color,.vienna-deep-blue-color,
 .light-oak-color,.wedge-color,.white-oak-color,.cyrus-light-oak-color,.white-oak-color,
-.cyrus-wedge-color,.gamma-wedge-color,.gamma-light-oak-color{
+.cyrus-wedge-color,.gamma-wedge-color,.gamma-light-oak-color,.gamma-white-oak-color,
+.takka-mahogany-color,.takka-walnut-color,.gamma-light-oak-color,.gamma3-walnut-color,
+.gamma3-wedge-color,.gamma3-white-color,.alexia-black-color,.alexia-brown-color,
+.jean-antraciet-color,.jean-taupe-color{
+
     width: 3rem;
     height: 3rem;
     border-radius: 100%;
@@ -164,19 +168,47 @@ FURNITURE COLOURS
     background-color:#d1af84;
 }
 
-.wedge-color,.cyrus-wedge-color,.gamma-wedge-color{
+.wedge-color,.cyrus-wedge-color,.gamma-wedge-color,.gamma3-wedge-color{
     background-color:#271910;
 }
 
-.white-oak-color{
+.white-oak-color,.gamma-white-oak-color,.gamma3-white-color{
     background-color:#ce9f6f;
+}
+
+.takka-mahogany-color{
+    background-color:#C04000;
+}
+
+.takka-walnut-color,.gamma3-walnut-color{
+    background-color: #773f1a;
+}
+
+.alexia-black-color{
+    background-color: #000000;
+}
+
+.alexia-brown-color{
+    background-color: #301e0a;
+}
+
+.jean-antraciet-color{
+    background-color: #383e42;
+}
+
+.jean-taupe-color{
+    background-color: #483C32;
 }
 
 .el-color:hover,.cream-color:hover,.blue-color:hover,.anthracite-color:hover,
 .lime-color:hover,.vienna-cream-color:hover,.deep-blue-color:hover,.vienna-Beige-color:hover,
 .vienna-elephant-color:hover,.vienna-deep-blue-color:hover,.light-oak-color:hover,
 .wedge-color:hover,.white-oak-color:hover.cyrus-light-oak-color:hover,.white-oak-color:hover,
-.cyrus-wedge-color:hover,.gamma-wedge-color:hover,.gamma-light-oak-color:hover{
+.cyrus-wedge-color:hover,.gamma-wedge-color:hover,.gamma-light-oak-color:hover,.gamma-white-oak-color:hover,
+.takka-mahogany-color:hover,.takka-walnut-color,.gamma-white-oak-color:hover,
+.gamma3-walnut-color:hover,.gamma3-wedge-color:hover,.gamma3-white-color:hover,
+.alexia-black-color:hover,.alexia-brown-color:hover,.jean-antraciet-color:hover,
+.jean-taupe-color:hover{
     animation: scaleUp 0.3s 1;
 }
 
@@ -188,7 +220,8 @@ FURNITURE COLOURS
 
 .el-color,.cream-color,.lime-color,.deep-blue-color,.vienna-deep-blue-color,
 .vienna-elephant-color,.wedge-color,.white-oak-color,.cyrus-light-oak-color,.white-oak-color,
-.gamma-wedge-color{
+.gamma-wedge-color,.takka-walnut-color,.gamma-white-oak-color,.gamma3-wedge-color,
+.gamma3-white-color,.alexia-brown-color,.jean-taupe-color{
     margin-left: 1rem;
 }
 
