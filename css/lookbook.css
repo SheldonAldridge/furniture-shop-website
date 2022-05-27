@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
-* {box-sizing:border-box}
 
 body{
     font-family: Perpetua Titling MT, sans-serif !important;
@@ -117,7 +116,7 @@ FURNITURE COLOURS
 .takka-mahogany-color,.takka-walnut-color,.gamma-light-oak-color,.gamma3-walnut-color,
 .gamma3-wedge-color,.gamma3-white-color,.alexia-black-color,.alexia-brown-color,
 .jean-antraciet-color,.jean-taupe-color,.maxime-ecru-color,.maxime-lichtgrijs-color,
-.oscar-ecru-color,.oscar-lichtgrijs-color{
+.oscar-ecru-color,.oscar-lichtgrijs-color,.caden-lightoak-color,.caden-Wenge-color{
 
     width: 3rem;
     height: 3rem;
@@ -165,11 +164,11 @@ FURNITURE COLOURS
     background-color:#8c7c6c;
 }
 
-.light-oak-color,.cyrus-light-oak-color,.gamma-light-oak-color{
+.light-oak-color,.cyrus-light-oak-color,.gamma-light-oak-color,.caden-lightoak-color{
     background-color:#d1af84;
 }
 
-.wedge-color,.cyrus-wedge-color,.gamma-wedge-color,.gamma3-wedge-color{
+.wedge-color,.cyrus-wedge-color,.gamma-wedge-color,.gamma3-wedge-color,.caden-Wenge-color{
     background-color:#271910;
 }
 
@@ -235,7 +234,7 @@ FURNITURE COLOURS
 .vienna-elephant-color,.wedge-color,.white-oak-color,.cyrus-light-oak-color,.white-oak-color,
 .gamma-wedge-color,.takka-walnut-color,.gamma-white-oak-color,.gamma3-wedge-color,
 .gamma3-white-color,.alexia-brown-color,.jean-taupe-color,.maxime-lichtgrijs-color,
-.oscar-lichtgrijs-color{
+.oscar-lichtgrijs-color,.caden-Wenge-color{
     margin-left: 1rem;
 }
 
