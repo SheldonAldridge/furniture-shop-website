@@ -282,3 +282,59 @@ cyruslight.addEventListener('click', function cyruslightOak(){
         cyrusThree.style.display = "block";
     }
 });
+
+let gammaClose = document.querySelector(".gamma-close");
+
+let bedSideThree = document.querySelector(".bedside3");
+
+let gammaBedSide = document.querySelector(".gamma-bedside");
+
+let gammawhiteOak = document.querySelector(".white-oak-color");
+let gammaWedge = document.querySelector(".gamma-wedge-color");
+let gammalight = document.querySelector(".gamma-light-oak-color");
+
+let gammaOne = document.querySelector(".gamma-one");
+let gammaTwo = document.querySelector(".gamma-two");
+let gammaThree = document.querySelector(".gamma-three");
+
+
+gammaClose.addEventListener('click', function gammaClose(){
+    if(gammaClose){
+        gammaBedSide.style.display = "none";
+    }
+});
+
+bedSideThree.addEventListener('click', function gammaOpen(){
+    if(bedSideThree){
+        gammaBedSide.style.display = "block";
+        gammaBedSide.style.animation = "openup 0.3s 1";
+        gammaOne.style.display = "block";
+        gammaTwo.style.display = "none";
+        gammaThree.style.display = "none";
+    }
+});
+
+gammaWedge.addEventListener('click', function gammaWedge(){
+    if(gammaWedge){
+        gammaOne.style.display = "none";
+        gammaTwo.style.display = "block";
+        gammaThree.style.display = "none";
+    }
+});
+
+gammawhiteOak.addEventListener('click', function gammawhiteOak(){
+    if(gammawhiteOak){
+        gammaOne.style.display = "none";
+        gammaTwo.style.display = "none";
+        gammaThree.style.display = "block";
+    }
+});
+
+gammalight.addEventListener('click', function gammalight(){
+    if(gammalight){
+        gammaOne.style.display = "block";
+        gammaTwo.style.display = "none";
+        gammaThree.style.display = "none";
+    }
+});
+
