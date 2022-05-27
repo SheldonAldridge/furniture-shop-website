@@ -112,7 +112,8 @@ FURNITURE COLOURS
 */
 .el-color,.cream-color,.blue-color,.anthracite-color,.lime-color,.vienna-cream-color,
 .deep-blue-color,.vienna-Beige-color,.vienna-elephant-color,.vienna-deep-blue-color,
-.light-oak-color,.wedge-color,.white-oak-color,.cyrus-light-oak-color,.white-oak-color,.cyrus-wedge-color{
+.light-oak-color,.wedge-color,.white-oak-color,.cyrus-light-oak-color,.white-oak-color,
+.cyrus-wedge-color,.gamma-wedge-color,.gamma-light-oak-color{
     width: 3rem;
     height: 3rem;
     border-radius: 100%;
@@ -159,11 +160,11 @@ FURNITURE COLOURS
     background-color:#8c7c6c;
 }
 
-.light-oak-color,.cyrus-light-oak-color{
+.light-oak-color,.cyrus-light-oak-color,.gamma-light-oak-color{
     background-color:#d1af84;
 }
 
-.wedge-color,.cyrus-wedge-color{
+.wedge-color,.cyrus-wedge-color,.gamma-wedge-color{
     background-color:#271910;
 }
 
@@ -171,12 +172,11 @@ FURNITURE COLOURS
     background-color:#ce9f6f;
 }
 
-
 .el-color:hover,.cream-color:hover,.blue-color:hover,.anthracite-color:hover,
 .lime-color:hover,.vienna-cream-color:hover,.deep-blue-color:hover,.vienna-Beige-color:hover,
 .vienna-elephant-color:hover,.vienna-deep-blue-color:hover,.light-oak-color:hover,
 .wedge-color:hover,.white-oak-color:hover.cyrus-light-oak-color:hover,.white-oak-color:hover,
-.cyrus-wedge-color:hover{
+.cyrus-wedge-color:hover,.gamma-wedge-color:hover,.gamma-light-oak-color:hover{
     animation: scaleUp 0.3s 1;
 }
 
@@ -187,10 +187,10 @@ FURNITURE COLOURS
 }
 
 .el-color,.cream-color,.lime-color,.deep-blue-color,.vienna-deep-blue-color,
-.vienna-elephant-color,.wedge-color,.white-oak-color,.cyrus-light-oak-color{
+.vienna-elephant-color,.wedge-color,.white-oak-color,.cyrus-light-oak-color,.white-oak-color,
+.gamma-wedge-color{
     margin-left: 1rem;
 }
-
 
 .el-color,.cream-color,.blue-color{
     z-index: 1;
