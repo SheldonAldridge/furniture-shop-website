@@ -289,7 +289,7 @@ let bedSideThree = document.querySelector(".bedside3");
 
 let gammaBedSide = document.querySelector(".gamma-bedside");
 
-let gammawhiteOak = document.querySelector(".white-oak-color");
+let gammawhiteOak = document.querySelector(".gamma-white-oak-color");
 let gammaWedge = document.querySelector(".gamma-wedge-color");
 let gammalight = document.querySelector(".gamma-light-oak-color");
 
@@ -322,14 +322,6 @@ gammaWedge.addEventListener('click', function gammaWedge(){
     }
 });
 
-gammawhiteOak.addEventListener('click', function gammawhiteOak(){
-    if(gammawhiteOak){
-        gammaOne.style.display = "none";
-        gammaTwo.style.display = "none";
-        gammaThree.style.display = "block";
-    }
-});
-
 gammalight.addEventListener('click', function gammalight(){
     if(gammalight){
         gammaOne.style.display = "block";
@@ -338,3 +330,191 @@ gammalight.addEventListener('click', function gammalight(){
     }
 });
 
+gammawhiteOak.addEventListener('click', function gammawhiteOak(){
+    if(gammawhiteOak){
+        gammaOne.style.display = "none";
+        gammaTwo.style.display = "none";
+        gammaThree.style.display = "block";
+    }
+});
+
+
+let gammaThreeClose = document.querySelector(".gamma3-close");
+
+let bedSideFour = document.querySelector(".bedside4");
+
+let gammaThreeBedSide = document.querySelector(".gamma3-bedside");
+
+let gammaThreewalnut = document.querySelector(".gamma3-walnut-color");
+let gammaThreeWedge = document.querySelector(".gamma3-wedge-color");
+let gammaThreewhite = document.querySelector(".gamma3-white-color");
+
+let gammaThreeOne = document.querySelector(".gamma3-one");
+let gammaThreeTwo = document.querySelector(".gamma3-two");
+let gammaThreeThree = document.querySelector(".gamma3-three");
+
+
+gammaThreeClose.addEventListener('click', function gammaThreeClose(){
+    if(gammaThreeClose){
+        gammaThreeBedSide.style.display = "none";
+    }
+});
+
+bedSideFour.addEventListener('click', function bedSideFour(){
+    if(bedSideFour){
+        gammaThreeBedSide.style.display = "block";
+        gammaThreeBedSide.style.animation = "openup 0.3s 1";
+        gammaThreeOne.style.display = "block";
+        gammaThreeTwo.style.display = "none";
+        gammaThreeThree.style.display = "none";
+    }
+});
+
+gammaThreewalnut.addEventListener('click', function gammaThreewalnut(){
+    if(gammaThreewalnut){
+        gammaThreeOne.style.display = "block";
+        gammaThreeTwo.style.display = "none";
+        gammaThreeThree.style.display = "none";
+    }
+});
+
+gammaThreeWedge.addEventListener('click', function gammaThreeWedge(){
+    if(gammaThreeWedge){
+        gammaThreeOne.style.display = "none";
+        gammaThreeTwo.style.display = "block";
+        gammaThreeThree.style.display = "none";
+    }
+});
+
+gammaThreewhite.addEventListener('click', function gammaThreewhite(){
+    if(gammaThreewhite){
+        gammaThreeOne.style.display = "none";
+        gammaThreeTwo.style.display = "none";
+        gammaThreeThree.style.display = "block";
+    }
+});
+
+
+
+let takkaClose = document.querySelector(".takka-close");
+
+let bedSideFive = document.querySelector(".bedside5");
+
+let takkaBedSide = document.querySelector(".takka-bedside");
+
+let takkaWalnut = document.querySelector(".takka-mahogany-color");
+let takkaMahogany = document.querySelector(".takka-walnut-color");
+
+let takaOne = document.querySelector(".takka-one");
+let takaTwo = document.querySelector(".takka-two");
+
+takkaClose.addEventListener('click', function takkaClose(){
+    if(takkaClose){
+        takkaBedSide.style.display = "none";
+    }
+});
+
+bedSideFive.addEventListener('click', function bedSideFive(){
+    if(bedSideFive){
+        takkaBedSide.style.display = "block";
+        takkaBedSide.style.animation = "openup 0.3s 1";
+        takaOne.style.display = "block";
+        takaTwo.style.display = "none";
+    }
+});
+
+takkaWalnut.addEventListener('click', function takkaWalnut(){
+    if(takkaWalnut){
+        takaOne.style.display = "block";
+        takaTwo.style.display = "none";
+    }
+});
+
+takkaMahogany.addEventListener('click', function takkaMahogany(){
+    if(takkaMahogany){
+        takaOne.style.display = "none";
+        takaTwo.style.display = "block";
+    }
+});
+
+let alexiaClose = document.querySelector(".alexia-close");
+
+let chairOne = document.querySelector(".chair1");
+
+let chairCardOne = document.querySelector(".alexia-chair");
+
+let alexiaBlack = document.querySelector(".alexia-black-color");
+let alexiaBrown = document.querySelector(".alexia-brown-color");
+
+let alexiaOne = document.querySelector(".alexia-one");
+let alexiaTwo = document.querySelector(".alexia-two");
+
+alexiaClose.addEventListener('click', function alexiaClose(){
+    if(alexiaClose){
+        chairCardOne.style.display = "none";
+    }
+});
+
+chairOne.addEventListener('click', function chairOne(){
+    if(chairOne){
+        chairCardOne.style.display = "block";
+        chairCardOne.style.animation = "openup 0.3s 1";
+        alexiaOne.style.display = "block";
+        alexiaTwo.style.display = "none";
+    }
+});
+
+alexiaBlack.addEventListener('click', function alexiaBlack(){
+    if(alexiaBlack){
+        alexiaOne.style.display = "block";
+        alexiaTwo.style.display = "none";
+    }
+});
+
+alexiaBrown.addEventListener('click', function alexiaBrown(){
+    if(alexiaBrown){
+        alexiaOne.style.display = "none";
+        alexiaTwo.style.display = "block";
+    }
+});
+
+let jeanClose = document.querySelector(".jean-close");
+
+let chairTwo = document.querySelector(".chair2");
+
+let chairCardTwo = document.querySelector(".jean-chair");
+
+let jeanAntraciet = document.querySelector(".jean-antraciet-color");
+let jeanTaupe = document.querySelector(".jean-taupe-color");
+
+let jeanOne = document.querySelector(".jean-one");
+let jeanTwo = document.querySelector(".jean-two");
+
+jeanClose.addEventListener('click', function jeanClose(){
+    if(jeanClose){
+        chairCardTwo.style.display = "none";
+    }
+});
+
+chairTwo.addEventListener('click', function chairTwo(){
+    if(chairTwo){
+        chairCardTwo.style.display = "block";
+        chairCardTwo.style.animation = "openup 0.3s 1";
+        jeanOne.style.display = "block";
+        jeanTwo.style.display = "none";
+    }
+});
+
+jeanAntraciet.addEventListener('click', function jeanAntraciet(){
+    if(jeanAntraciet){
+        jeanOne.style.display = "block";
+        jeanTwo.style.display = "none";
+    }
+});
+
+jeanTaupe.addEventListener('click', function jeanTaupe(){
+    if(alexiaBrown){
+        jeanOne.style.display = "none";
+        jeanTwo.style.display = "block";
+    }
+});
