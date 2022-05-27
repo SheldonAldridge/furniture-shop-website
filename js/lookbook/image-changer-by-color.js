@@ -559,3 +559,85 @@ maximeLichtgrijs.addEventListener('click', function maximeLichtgrijs(){
         maximeTwo.style.display = "block";
     }
 });
+
+let oscarClose = document.querySelector(".oscar-close");
+
+let chairFour = document.querySelector(".chair4");
+
+let chairCardFour = document.querySelector(".oscar-chair");
+
+let oscarEcru = document.querySelector(".oscar-ecru-color");
+let oscarLichtgrijs = document.querySelector(".oscar-lichtgrijs-color");
+
+let oscarOne = document.querySelector(".oscar-one");
+let oscarTwo = document.querySelector(".oscar-two");
+
+oscarClose.addEventListener('click', function oscarClose(){
+    if(oscarClose){
+        chairCardFour.style.display = "none";
+    }
+});
+
+chairFour.addEventListener('click', function chairFour(){
+    if(chairFour){
+        chairCardFour.style.display = "block";
+        chairCardFour.style.animation = "openup 0.3s 1";
+        oscarOne.style.display = "block";
+        oscarTwo.style.display = "none";
+    }
+});
+
+oscarEcru.addEventListener('click', function oscarEcru(){
+    if(oscarEcru){
+        oscarOne.style.display = "block";
+        oscarTwo.style.display = "none";
+    }
+});
+
+oscarLichtgrijs.addEventListener('click', function oscarLichtgrijs(){
+    if(oscarLichtgrijs){
+        oscarOne.style.display = "none";
+        oscarTwo.style.display = "block";
+    }
+});
+
+let cadenClose = document.querySelector(".caden-close");
+
+let coffeeOne = document.querySelector(".coffee-table1");
+
+let coffeeCardOne = document.querySelector(".caden-coffee");
+
+let cadenOak = document.querySelector(".caden-lightoak-color");
+let cadenWedge = document.querySelector(".caden-Wenge-color");
+
+let cadenOne = document.querySelector(".caden-one");
+let cadenTwo = document.querySelector(".caden-two");
+
+cadenClose.addEventListener('click', function cadenClose(){
+    if(cadenClose){
+        coffeeCardOne.style.display = "none";
+    }
+});
+
+coffeeOne.addEventListener('click', function coffeeOne(){
+    if(coffeeOne){
+        coffeeCardOne.style.display = "block";
+        coffeeCardOne.style.animation = "openup 0.3s 1";
+        cadenOne.style.display = "block";
+        cadenTwo.style.display = "none";
+    }
+});
+
+cadenOak.addEventListener('click', function cadenOak(){
+    if(cadenOak){
+        cadenOne.style.display = "block";
+        cadenTwo.style.display = "none";
+    }
+});
+
+cadenWedge.addEventListener('click', function cadenWedge(){
+    if(cadenWedge){
+        cadenOne.style.display = "none";
+        cadenTwo.style.display = "block";
+    }
+});
