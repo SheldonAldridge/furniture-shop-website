@@ -116,7 +116,8 @@ FURNITURE COLOURS
 .cyrus-wedge-color,.gamma-wedge-color,.gamma-light-oak-color,.gamma-white-oak-color,
 .takka-mahogany-color,.takka-walnut-color,.gamma-light-oak-color,.gamma3-walnut-color,
 .gamma3-wedge-color,.gamma3-white-color,.alexia-black-color,.alexia-brown-color,
-.jean-antraciet-color,.jean-taupe-color{
+.jean-antraciet-color,.jean-taupe-color,.maxime-ecru-color,.maxime-lichtgrijs-color,
+.oscar-ecru-color,.oscar-lichtgrijs-color{
 
     width: 3rem;
     height: 3rem;
@@ -200,6 +201,17 @@ FURNITURE COLOURS
     background-color: #483C32;
 }
 
+.maxime-ecru-color,.oscar-ecru-color{
+    background-color: #C2B280;
+}
+
+.maxime-lichtgrijs-color,.oscar-lichtgrijs-color{
+    background-color: #d3d3d3;
+}
+
+
+
+
 .el-color:hover,.cream-color:hover,.blue-color:hover,.anthracite-color:hover,
 .lime-color:hover,.vienna-cream-color:hover,.deep-blue-color:hover,.vienna-Beige-color:hover,
 .vienna-elephant-color:hover,.vienna-deep-blue-color:hover,.light-oak-color:hover,
@@ -208,7 +220,8 @@ FURNITURE COLOURS
 .takka-mahogany-color:hover,.takka-walnut-color,.gamma-white-oak-color:hover,
 .gamma3-walnut-color:hover,.gamma3-wedge-color:hover,.gamma3-white-color:hover,
 .alexia-black-color:hover,.alexia-brown-color:hover,.jean-antraciet-color:hover,
-.jean-taupe-color:hover{
+.jean-taupe-color:hover,.maxime-ecru-color:hover,.maxime-lichtgrijs-color:hover,.oscar-ecru-color:hover,
+.oscar-lichtgrijs-color:hover{
     animation: scaleUp 0.3s 1;
 }
 
@@ -221,7 +234,8 @@ FURNITURE COLOURS
 .el-color,.cream-color,.lime-color,.deep-blue-color,.vienna-deep-blue-color,
 .vienna-elephant-color,.wedge-color,.white-oak-color,.cyrus-light-oak-color,.white-oak-color,
 .gamma-wedge-color,.takka-walnut-color,.gamma-white-oak-color,.gamma3-wedge-color,
-.gamma3-white-color,.alexia-brown-color,.jean-taupe-color{
+.gamma3-white-color,.alexia-brown-color,.jean-taupe-color,.maxime-lichtgrijs-color,
+.oscar-lichtgrijs-color{
     margin-left: 1rem;
 }
 
