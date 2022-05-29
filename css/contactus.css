@@ -50,11 +50,11 @@ body{
 }
 
 .hero-image{
-  width:100vw;
+  margin-left:-3rem;
+  width:100.5vw;
   height: 60vh;
   background-image: url("../assets/contact page/hero-image.jpg");
   background-size: cover;
-  padding-left: 99.3vw;
   filter: saturate(50%);
 }
 
@@ -66,10 +66,97 @@ font-size: 100px;
 color: var(--dark-sienna-color);
 }
 
+.container-info{
+    width: 100%;
+    background-color:var(--dark-sienna-color);
+}
+
+.icons{
+    display: flex;
+    margin-left:20%;
+}
+
+.icons img{
+    width:5rem;
+    filter: invert(74%) sepia(9%) saturate(1092%) hue-rotate(350deg) brightness(87%) contrast(81%);
+    margin-top: 3rem;
+}
+
+.location-icon,.email-icon{
+    margin-left: 30rem;
+}
+
+.phone-icon h4,.location-icon h4,.email-icon h4{
+    color:var(--camel-color);
+    text-decoration: underline;
+    margin-top: 1rem;
+    margin-left: -1rem;
+}
+
+.email-icon h4{
+    margin-left: 0.2rem;
+}
+
+.phone-icon p,.location-icon p,.email-icon p{
+    color:var(--camel-color);
+    width:10rem;
+    margin-left: -1rem;
+}
+
+.email-icon p{
+    margin-left: 0.3rem;
+}
+
+.container-form{
+    position: absolute;
+    background-color: var(--french-bistre-color);
+    width: 100%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding-bottom:2rem;
+    margin-top: 3rem;
+    margin-left: 40rem;
+}
+
+#fname,#email, #subject, #subject, #message{
+    width:30rem;
+    padding: 10px;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+.submit{
+    width:20rem;
+    margin-left: 8rem;
+    margin-top: 2rem;
+    border-radius: 3rem;
+    padding: 1rem;
+    border: none;
+    background-color: var(--black-coffee-color);
+    color: var(--black-bean-color);
+}
+
+.submit:hover{
+    background-color: var(--black-bean-color);
+    color: var(--black-coffee-color);
+}
+
+.map{
+    position: absolute;
+    margin-left: 35rem;
+    margin-top: 1rem;
+}
+
 .footer{
+    position: relative;
     background-color: var(--dark-sienna-color);
     height:160px;
-    margin-top: 10rem;
+    margin-top: 30rem;
 }
 
 .container-footer{
