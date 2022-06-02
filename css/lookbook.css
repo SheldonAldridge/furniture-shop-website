@@ -73,7 +73,7 @@ body{
 }
 
 .close{
-    margin-left: 78rem;
+    margin-left: 48rem;
     margin-top: 1rem;
     font-size: 20px;
     font-weight: bolder;
@@ -84,14 +84,28 @@ body{
 .card{
     position: absolute;
     display: none;
-    margin-top: -99rem;
-    margin-left: 32rem;
-    width:80rem;
+    margin-top: -86rem;
+    margin-left: 44rem;
+    width: 51rem;
+    z-index: 2;
+}
+
+.alexia-chair,.jean-chair,.maxime-chair,.oscar-chair,
+.caden-coffee,.judy-coffee{
+margin-top: -66rem;
 }
 
 .bed-two,.bed-three{
     position: absolute;
     display: none;
+}
+
+.cost{
+    margin-left: -27rem;
+}
+
+.card-body{
+    display: flex;
 }
 
 .card-titel{
@@ -117,7 +131,8 @@ FURNITURE COLOURS
 .takka-mahogany-color,.takka-walnut-color,.gamma-light-oak-color,.gamma3-walnut-color,
 .gamma3-wedge-color,.gamma3-white-color,.alexia-black-color,.alexia-brown-color,
 .jean-antraciet-color,.jean-taupe-color,.maxime-ecru-color,.maxime-lichtgrijs-color,
-.oscar-ecru-color,.oscar-lichtgrijs-color,.caden-lightoak-color,.caden-Wenge-color{
+.oscar-ecru-color,.oscar-lichtgrijs-color,.caden-lightoak-color,.caden-Wenge-color,.alexia-black-color,
+.judy-lightoak-color,.judy-Wenge-color{
 
     width: 3rem;
     height: 3rem;
@@ -165,11 +180,13 @@ FURNITURE COLOURS
     background-color:#8c7c6c;
 }
 
-.light-oak-color,.cyrus-light-oak-color,.gamma-light-oak-color,.caden-lightoak-color{
+.light-oak-color,.cyrus-light-oak-color,.gamma-light-oak-color,.caden-lightoak-color,
+.judy-lightoak-color{
     background-color:#d1af84;
 }
 
-.wedge-color,.cyrus-wedge-color,.gamma-wedge-color,.gamma3-wedge-color,.caden-Wenge-color{
+.wedge-color,.cyrus-wedge-color,.gamma-wedge-color,.gamma3-wedge-color,.caden-Wenge-color,
+.judy-Wenge-color{
     background-color:#271910;
 }
 
@@ -221,7 +238,7 @@ FURNITURE COLOURS
 .gamma3-walnut-color:hover,.gamma3-wedge-color:hover,.gamma3-white-color:hover,
 .alexia-black-color:hover,.alexia-brown-color:hover,.jean-antraciet-color:hover,
 .jean-taupe-color:hover,.maxime-ecru-color:hover,.maxime-lichtgrijs-color:hover,.oscar-ecru-color:hover,
-.oscar-lichtgrijs-color:hover{
+.oscar-lichtgrijs-color:hover,.judy-lightoak-color:hover,.judy-Wenge-color{
     animation: scaleUp 0.3s 1;
 }
 
@@ -235,7 +252,7 @@ FURNITURE COLOURS
 .vienna-elephant-color,.wedge-color,.white-oak-color,.cyrus-light-oak-color,.white-oak-color,
 .gamma-wedge-color,.takka-walnut-color,.gamma-white-oak-color,.gamma3-wedge-color,
 .gamma3-white-color,.alexia-brown-color,.jean-taupe-color,.maxime-lichtgrijs-color,
-.oscar-lichtgrijs-color,.caden-Wenge-color{
+.oscar-lichtgrijs-color,.caden-Wenge-color,.judy-lightoak-color,.judy-Wenge-color{
     margin-left: 1rem;
 }
 
@@ -248,7 +265,7 @@ FURNITURE COLOURS
 */
 
 .price{
- margin-top:2rem;
+ margin-top:1rem;
  margin-left:-4rem;
 }
 
@@ -262,7 +279,7 @@ FURNITURE COLOURS
     background-color: var(--camel-color);
     color: var(--black-bean-color);
     font-size: 20px;
-    margin-left:-1rem;
+    margin-left: -28rem;
 }
 
 .btn:hover, .btn-light:hover{
@@ -371,3 +388,42 @@ FURNITURE COLOURS
 
     100% {transform: scale(1);}
 }
+
+.exit{
+    position: absolute;
+    margin-left: 9rem;
+    margin-top: -2rem;
+    color:var(--dark-sienna-color);
+    cursor: pointer;
+}
+
+.content-section{
+    position: absolute;
+    margin-left: 145rem;
+    margin-top: -116rem;
+    background-color: var(--camel-color);
+    padding: 3rem 2.79rem 111.3rem; 
+    display: none;
+}
+
+.section-header{
+    color: var(--french-bistre-color);
+    text-align: center;
+    text-decoration: underline;
+}
+
+.cart-row{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-purchase{
+    margin-left: 0rem;
+    margin-top:  2rem;
+    border-color: var(--dark-sienna-color);
+}
+
+.btn-purchase:hover{
+border-color: var(--dark-sienna-color);
+}
+
