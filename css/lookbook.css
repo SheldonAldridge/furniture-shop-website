@@ -47,7 +47,6 @@ body{
 
 .cart a{
     filter: invert(43%) sepia(32%) saturate(310%) hue-rotate(347deg) brightness(90%) contrast(88%);
-    margin-left: -21rem;
     width:0rem;
 }
 
@@ -403,7 +402,6 @@ FURNITURE COLOURS
     margin-top: -116rem;
     background-color: var(--camel-color);
     padding: 3rem 2.79rem 109.3rem; 
-    display: none;
 }
 
 .section-header{
