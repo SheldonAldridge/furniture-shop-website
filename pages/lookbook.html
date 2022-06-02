@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    
     <!-- link to js files -->
-    <script type="module" src="/js/lookbook/add-to-cart.js" async></script>
+    <script src="/js/lookbook/add-to-cart.js" defer></script>
     <script src="/js/lookbook/image-changer-by-color.js" defer></script>
     <script src="/js/lookbook/lookbook-slideslow.js" defer></script>
 
@@ -44,9 +44,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="/pages/contactpage.html">Contact Us</a>
               </li>
-              <li class = "nav-item cart">
-                <a class = "nav-link">
-                    <img src="/assets/icons/cart shopping icon.svg" alt="heart icon"></a>
+              <li class = "nav-item cart" data-target="#cart">
+                <a class = "nav-link" href="../pages/cart.html">
+                    <img src="/assets/icons/cart shopping icon.svg" alt="cart icon"><span>0</span></a>
             </li>
             </ul>
           </div>
@@ -148,7 +148,7 @@
                 </div>
                 <div class = "fav-cart">
                 <div class="price">
-                <h5 class = "card-titel cost shop-item-price">R 8000</h5>
+                <h5 class = "card-titel cost shop-item-price">R 3500</h5>
                 <button class="btn btn-light shop-item-button">Add to Cart</button>
               </div>
               </div>
@@ -168,7 +168,7 @@
           </div>
           <div class = "fav-cart">
           <div class="price">
-          <h5 class = "card-titel cost shop-item-price">R5000</h5>
+          <h5 class = "card-titel cost shop-item-price">R2500</h5>
           <button type="button" class="btn btn-light shop-item-button">Add to Cart</button>
         </div>
         </div>
@@ -188,7 +188,7 @@
         </div>
         <div class = "fav-cart">
         <div class="price">
-        <h5 class = "card-titel cost">R7 500, 00</h5>
+        <h5 class = "card-titel cost">R2000</h5>
         <button type="button" class="btn btn-light shop-item-button">Add to Cart</button>
       </div>
       </div>
@@ -202,7 +202,7 @@
     <img class="card-img-top norma-two shop-item-image" src="/assets/lookbook/beds/large/Norma Bed - Vienna Deep Blue-large.png" alt="Norma Bed - Vienna Deep Blue-large Image">
     <img class="card-img-top norma-three" src="/assets/lookbook/beds/large/Norma Bed - Vienna Elephant-large.png" alt="Norma Bed - Vienna Elephant Image">
     <div class="card-body">
-      <h5 class = "card-titel">Miuzza Bed</h5>
+      <h5 class = "card-titel">Norma Bed</h5>
       <div class = "card-text">
         <div class = "vienna-Beige-color"></div>
         <div class = "vienna-deep-blue-color"></div>
@@ -210,7 +210,7 @@
       </div>
       <div class = "fav-cart">
       <div class="price">
-      <h5 class = "card-titel cost">R7 895,90</h5>
+      <h5 class = "card-titel cost">R3000</h5>
       <button type="button" class="btn btn-light shop-item-button">Add to Cart</button>
     </div>
     </div>
@@ -230,7 +230,7 @@
     </div>
     <div class = "fav-cart">
     <div class="price">
-    <h5 class = "card-titel cost">R1 200, 00</h5>
+    <h5 class = "card-titel cost">R1 200</h5>
     <button type="button" class="btn btn-light shop-item-button">Add to Cart</button>
   </div>
   </div>
@@ -274,7 +274,7 @@
     </div>
     <div class = "fav-cart">
     <div class="price">
-    <h5 class = "card-titel cost">R3 500, 00</h5>
+    <h5 class = "card-titel cost">R900</h5>
     <button type="button" class="btn btn-light shop-item-button">Add to Cart</button>
   </div>
   </div>
@@ -296,7 +296,7 @@
     </div>
     <div class = "fav-cart">
     <div class="price">
-    <h5 class = "card-titel cost">R1 200, 00</h5>
+    <h5 class = "card-titel cost">R1100</h5>
     <button type="button" class="btn btn-light shop-item-button">Add to Cart</button>
   </div>
   </div>
@@ -316,7 +316,7 @@
     </div>
     <div class = "fav-cart">
     <div class="price">
-    <h5 class = "card-titel cost">R2000, 00</h5>
+    <h5 class = "card-titel cost">R800</h5>
     <button type="button" class="btn btn-light shop-item-button">Add to Cart</button>
   </div>
   </div>
@@ -329,14 +329,14 @@
   <img class="card-img-top alexia-one shop-item-image" src="/assets/lookbook/chair/large/ALEXA CHAIR - GRIJS-large.jpg" alt="ALEXA CHAIR - GRIJS Image">
   <img class="card-img-top alexia-two shop-item-image" src="/assets/lookbook/chair/large/ALEXA CHAIR - OUDROZE-large.jpg" alt="TIKKA 1 DRAWER PEDESTAL-walnut Image">
   <div class="card-body">
-    <h5 class = "card-titel">Alexia Bedside</h5>
+    <h5 class = "card-titel">Alexia Chair</h5>
     <div class = "card-text">
       <div class = "alexia-black-color"></div>
       <div class = "alexia-brown-color"></div>
     </div>
     <div class = "fav-cart">
     <div class="price">
-    <h5 class = "card-titel cost">R1500, 00</h5>
+    <h5 class = "card-titel cost">R1500</h5>
     <button type="button" class="btn btn-light shop-item-button">Add to Cart</button>
   </div>
   </div>
@@ -349,14 +349,14 @@
   <img class="card-img-top jean-one shop-item-image" src="/assets/lookbook/chair/large/JEAN STOOL - ANTRACIET-large.jpg" alt="ALEXA CHAIR - GRIJS Image">
   <img class="card-img-top jean-two shop-item-image" src="/assets/lookbook/chair/large/JEAN STOOL - TAUPE-large.jpg" alt="TIKKA 1 DRAWER PEDESTAL-walnut Image">
   <div class="card-body">
-    <h5 class = "card-titel">Jean Bedside</h5>
+    <h5 class = "card-titel">Jean Chair</h5>
     <div class = "card-text">
       <div class = "jean-antraciet-color"></div>
       <div class = "jean-taupe-color"></div>
     </div>
     <div class = "fav-cart">
     <div class="price">
-    <h5 class = "card-titel cost">R1500, 00</h5>
+    <h5 class = "card-titel cost">R1050</h5>
     <button type="button" class="btn btn-light shop-item-button">Add to Cart</button>
   </div>
   </div>
@@ -369,14 +369,14 @@
   <img class="card-img-top maxime-one shop-item-image" src="/assets/lookbook/chair/large/MAXIME CHAIR - ECRU-large.jpg" alt="ALEXA CHAIR - GRIJS Image">
   <img class="card-img-top maxime-two shop-item-image" src="/assets/lookbook/chair/large/MAXIME CHAIR - LICHTGRIJS-large.jpg" alt="TIKKA 1 DRAWER PEDESTAL-walnut Image">
   <div class="card-body">
-    <h5 class = "card-titel">Maxime Bedside</h5>
+    <h5 class = "card-titel">Maxime Chair</h5>
     <div class = "card-text">
       <div class = "maxime-ecru-color"></div>
       <div class = "maxime-lichtgrijs-color"></div>
     </div>
     <div class = "fav-cart">
     <div class="price">
-    <h5 class = "card-titel cost">R1500, 00</h5>
+    <h5 class = "card-titel cost">R1300</h5>
     <button type="button" class="btn btn-light shop-item-button">Add to Cart</button>
   </div>
   </div>
@@ -389,14 +389,14 @@
   <img class="card-img-top oscar-one shop-item-image" src="/assets/lookbook/chair/large/OSCAR CHAIR - ANTRACIET-large.jpg" alt="ALEXA CHAIR - GRIJS Image">
   <img class="card-img-top oscar-two shop-item-image" src="/assets/lookbook/chair/large/OSCAR CHAIR - LICHTGRIJS-large.jpg" alt="TIKKA 1 DRAWER PEDESTAL-walnut Image">
   <div class="card-body">
-    <h5 class = "card-titel">Oscar Bedside</h5>
+    <h5 class = "card-titel">Oscar Chair</h5>
     <div class = "card-text">
       <div class = "oscar-ecru-color"></div>
       <div class = "oscar-lichtgrijs-color"></div>
     </div>
     <div class = "fav-cart">
     <div class="price">
-    <h5 class = "card-titel cost">R1500, 00</h5>
+    <h5 class = "card-titel cost">R700</h5>
     <button type="button" class="btn btn-light shop-item-button">Add to Cart</button>
   </div>
   </div>
@@ -436,34 +436,14 @@
     </div>
     <div class = "fav-cart">
     <div class="price">
-    <h5 class = "card-titel cost"></h5>
+    <h5 class = "card-titel cost">R1300</h5>
     <button type="button" class="btn btn-light shop-item-button">Add to Cart</button>
   </div>
   </div>
 </div>
 </div>
-
-<aside class="content-section">
-  <div class = "exit">X</div>
-  <h2 class="section-header">CART</h2>
-  <div class="cart-row">
-      <span class="cart-item cart-header cart-column">ITEM</span>
-      <span class="cart-price cart-header cart-column">PRICE</span>
-      <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-  </div>
-  <div class="cart-items">
-  </div>
-  <div class="cart-total">
-      <strong class="cart-total-title">Total</strong>
-      <span class="cart-total-price">R0</span>
-  </div>
-  <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
-</aside>
-
   </main>
 
-
-  
     <footer>
       <div class="footer">
           <div class = "container-footer">
@@ -504,3 +484,6 @@
       
       </div>
   </footer>
+
+
+  
