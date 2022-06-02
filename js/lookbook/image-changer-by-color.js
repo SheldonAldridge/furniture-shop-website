@@ -641,3 +641,44 @@ cadenWedge.addEventListener('click', function cadenWedge(){
         cadenTwo.style.display = "block";
     }
 });
+
+let judyClose = document.querySelector(".judy-close");
+
+let coffeeTwo = document.querySelector(".coffee-table2");
+
+let coffeeCardTwo = document.querySelector(".judy-coffee");
+
+let judyOak = document.querySelector(".judy-lightoak-color");
+let judyWedge = document.querySelector(".judy-Wenge-color");
+
+let judyOne = document.querySelector(".judy-one");
+let judyTwo = document.querySelector(".judy-two");
+
+judyClose.addEventListener('click', function judyClose(){
+    if(judyClose){
+        coffeeCardTwo.style.display = "none";
+    }
+});
+
+coffeeTwo.addEventListener('click', function coffeeTwo(){
+    if(coffeeTwo){
+        coffeeCardTwo.style.display = "block";
+        coffeeCardTwo.style.animation = "openup 0.3s 1";
+        judyOne.style.display = "block";
+        judyTwo.style.display = "none";
+    }
+});
+
+judyOak.addEventListener('click', function judyOak(){
+    if(judyOak){
+        judyOne.style.display = "block";
+        judyTwo.style.display = "none";
+    }
+});
+
+judyWedge.addEventListener('click', function cadenWedge(){
+    if(judyWedge){
+        judyOne.style.display = "none";
+        judyTwo.style.display = "block";
+    }
+});
