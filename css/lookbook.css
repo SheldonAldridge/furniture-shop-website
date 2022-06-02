@@ -50,6 +50,12 @@ body{
     width:0rem;
 }
 
+span{
+    position: absolute;
+    margin-left: 37rem;
+    margin-top: -1.5rem;
+}
+
 .header{
     font-size:50px;
     text-align: center;
@@ -263,11 +269,6 @@ FURNITURE COLOURS
 FURNITURE COLOURS
 */
 
-.price{
- margin-top:1rem;
- margin-left:-4rem;
-}
-
 .fav-cart{
     position: absolute;
     margin-top: -5rem;
@@ -425,3 +426,11 @@ FURNITURE COLOURS
 border-color: var(--dark-sienna-color);
 }
 
+/*---------------CART SECTION -------------*/
+
+.product-container{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
