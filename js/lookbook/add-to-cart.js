@@ -1,123 +1,196 @@
-if(document.readyState == 'loading'){
-    document.addEventListener('DOMContentLoaded', ready)
+let carts = document.querySelectorAll('.shop-item-button');
+
+let products = [
+    {
+    name: 'Corin Bed',
+    tag: 'Corin Bed-Vienna Dark Blue.jpg',
+    price: 3500,
+    inCart:0
+},
+{
+    name: 'Miranda Bed',
+    tag: 'Miranda Bed - Elephant & Anthracite.jpg',
+    price: 2500,
+    inCart:0
+},
+{
+    name: 'Miuzza Bed',
+    tag: 'Miuzza Bed - Vienna Cream.jpg',
+    price: 2000,
+    inCart:0
+},
+{
+    name: 'Norma Bed',
+    tag: 'Norma Bed - Vienna Beige.jpg',
+    price: 3000,
+    inCart:0
+},
+{
+    name: 'Alpha Bedside',
+    tag: 'ALPHA 1 DRAWER PEDESTAL-light oak.jpg',
+    price: 1200,
+    inCart:0
+},
+{
+    name: 'Cyrus Bedside',
+    tag: 'CYRUS 1 DOOR PEDESTAL - wedge.jpg',
+    price: 1567,
+    inCart:0
+},
+{
+    name: 'Gamma Bedside',
+    tag: 'GAMMA 2 DRAWER PEDESTAL-light oak.jpg',
+    price: 900,
+    inCart:0
+},
+{
+    name: 'Gamma 3 Bedside',
+    tag: 'GAMMA 3 DRAWER PEDESTAL-walnut.jpg',
+    price: 1100,
+    inCart:0
+},
+{
+    name: 'Takka Bedside',
+    tag: 'TIKKA 1 DRAWER PEDESTAL-mahogany.jpg',
+    price: 800,
+    inCart:0
+},
+{
+    name: 'Alexia Chair',
+    tag: 'ALEXA CHAIR - GRIJS.jpg',
+    price: 1500,
+    inCart:0
+},
+{
+    name: 'Jean Chair',
+    tag: 'JEAN STOOL - ANTRACIET.jpg',
+    price: 1050,
+    inCart:0
+},
+{
+    name: 'Maxime Chair',
+    tag: 'MAXIME CHAIR - ECRU.jpg',
+    price: 1300,
+    inCart:0
+},
+{
+    name: 'Oscar Chair',
+    tag: 'OSCAR CHAIR - ANTRACIET.jpg',
+    price: 700,
+    inCart:0
+},
+{
+    name: 'Caden Coffee Table',
+    tag: 'CADEN 120x60cm COFFEE TABLE-Light Oak.jpg',
+    price: 1500,
+    inCart:0
+},
+{
+    name: 'Judy Coffee Table',
+    tag: 'JUDY 100x55cm COFFEE TABLE-light oak.jpg',
+    price: 1300,
+    inCart:0
+},
+]
+
+for(let i = 0; i < carts.length; i++){
+    carts[i].addEventListener('click', () =>{
+        cartNumbers(products[i]);
+        totalCost(products[i])
+    })
+}
+
+function onloadCartNumbers(){
+    let productNumbers = localStorage.getItem('cartNumbers');
+
+    if(productNumbers){
+        document.querySelector('.cart span').textContent = productNumbers;
+    }
+}
+
+function cartNumbers(products){
+    let productNumbers = localStorage.getItem('cartNumbers');
+
+    productNumbers = parseInt(productNumbers);
+
+    if( productNumbers ){
+        localStorage.setItem('cartNumbers', productNumbers + 1);
+        document.querySelector('.cart span').textContent = productNumbers + 1;
+    }
+    else{
+        localStorage.setItem('cartNumbers', 1);
+        document.querySelector('.cart span').textContent = 1;
+    }
+    
+    setItem(products)
+}
+
+function setItem(products){
+   let cartItems = localStorage.getItem('productsIncart')
+   cartItems = JSON.parse(cartItems);
+
+   
+    if(cartItems != null) {
+
+        if(cartItems[products.tag] == undefined){
+            cartItems = {
+                ...cartItems,
+                [products.tag]:products
+            }
+        }
+        cartItems[products.tag].inCart += 1;
+       }
+       else{
+           products.incart = 1;
+           cartItems = {
+               [products.tag]: products
+           }
+       }
+
+    localStorage.setItem("productsIncart",JSON.stringify (cartItems));
+}
+
+function totalCost(products){
+//console.log("the product price is", products.price);
+let cartCost = localStorage.getItem("totalCost");
+
+
+
+console.log("the product price is", cartCost);
+
+if(cartCost != null){
+    cartCost = parseInt(cartCost);
+    localStorage.setItem("totalCost", cartCost + products.price);
 }
 else{
-    ready()
+    localStorage.setItem("totalCost", products.price);
+}
 }
 
-function ready() {
-    let removeCartItemButtons = document.getElementsByClassName('btn-danger')
-    for (let i = 0; i < removeCartItemButtons.length; i++) {
-        let button = removeCartItemButtons[i]
-        button.addEventListener('click', removeCartItem)
-    }
+function displayCart(){
+    let cartItems = localStorage.getItem("productsIncart");
+    cartItems = JSON.parse(cartItems);
 
-    let quantityInputs = document.getElementsByClassName('cart-quantity-input')
-    for (let i = 0; i < quantityInputs.length; i++) {
-        let input = quantityInputs[i]
-        input.addEventListener('change', quantityChanged)
+let productContainer = document.querySelector(".products")
+    if(cartItems && productContainer){
+        productContainer.innerHTML = '';
+        Object.values(cartItems).map(item => {
+            productContainer.innerHTML += `
+            <div class = "product">
+            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12.002 2.005c5.518 0 9.998 4.48 9.998 9.997 0 5.518-4.48 9.998-9.998 9.998-5.517 0-9.997-4.48-9.997-9.998 0-5.517 4.48-9.997 9.997-9.997zm0 8.933-2.721-2.722c-.146-.146-.339-.219-.531-.219-.404 0-.75.324-.75.749 0 .193.073.384.219.531l2.722 2.722-2.728 2.728c-.147.147-.22.34-.22.531 0 .427.35.75.751.75.192 0 .384-.073.53-.219l2.728-2.728 2.729 2.728c.146.146.338.219.53.219.401 0 .75-.323.75-.75 0-.191-.073-.384-.22-.531l-2.727-2.728 2.717-2.717c.146-.147.219-.338.219-.531 0-.425-.346-.75-.75-.75-.192 0-.385.073-.531.22z" fill-rule="nonzero"/></svg>
+                <img src="../assets/lookbook/${item.tag}">
+                <span>${item.name}</span>
+            </div>
+            <div class="price">${item.price}</div> 
+            <div class="quantity">
+            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m22 12.002c0-5.517-4.48-9.997-9.998-9.997-5.517 0-9.997 4.48-9.997 9.997 0 5.518 4.48 9.998 9.997 9.998 5.518 0 9.998-4.48 9.998-9.998zm-8.211-4.843c.141-.108.3-.157.456-.157.389 0 .755.306.755.749v8.501c0 .445-.367.75-.755.75-.157 0-.316-.05-.457-.159-1.554-1.203-4.199-3.252-5.498-4.258-.184-.142-.29-.36-.29-.592 0-.23.107-.449.291-.591z" fill-rule="nonzero"/></svg>
+            <span>${item.inCart}</span>
+            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m2.009 12.002c0-5.517 4.48-9.997 9.998-9.997s9.998 4.48 9.998 9.997c0 5.518-4.48 9.998-9.998 9.998s-9.998-4.48-9.998-9.998zm8.211-4.843c-.141-.108-.3-.157-.456-.157-.389 0-.755.306-.755.749v8.501c0 .445.367.75.755.75.157 0 .316-.05.457-.159 1.554-1.203 4.199-3.252 5.498-4.258.184-.142.29-.36.29-.592 0-.23-.107-.449-.291-.591z" fill-rule="nonzero"/></svg>
+            </div>
+            `
+        });
     }
-
-    let addToCartButtons = document.getElementsByClassName('shop-item-button')
-    for (let i = 0; i < addToCartButtons.length; i++) {
-        let button = addToCartButtons[i]
-        button.addEventListener('click', addToCartClicked)
-    }
-
-    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 }
 
-function purchaseClicked() {
-    alert('Thank you for your purchase')
-    let cartItems = document.getElementsByClassName('cart-items')[0]
-    while (cartItems.hasChildNodes()) {
-        cartItems.removeChild(cartItems.firstChild)
-    }
-    updateCartTotal()
-}
-
-function removeCartItem(event) {
-    let buttonClicked = event.target
-    buttonClicked.parentElement.parentElement.remove()
-    updateCartTotal()
-}
-
-function quantityChanged(event) {
-    let input = event.target
-    if (isNaN(input.value) || input.value <= 0) {
-        input.value = 1
-    }
-    updateCartTotal()
-}
-
-function addToCartClicked(event) {
-    let button = event.target
-    let shopItem = button.parentElement.parentElement
-    let title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
-    let price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
-    let imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
-    addItemToCart(title, price, imageSrc)
-    updateCartTotal()
-}
-
-function addItemToCart(title, price, imageSrc) {
-    let cartRow = document.createElement('div')
-    cartRow.classList.add('cart-row')
-    let cartItems = document.getElementsByClassName('cart-items')[0]
-    let cartItemNames = cartItems.getElementsByClassName('cart-item-title')
-    for (let i = 0; i < cartItemNames.length; i++) {
-        if (cartItemNames[i].innerText == title) {
-            alert('This item is already added to the cart')
-            return
-        }
-    }
-    let cartRowContents = `
-        <div class="cart-item cart-column">
-            <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
-            <span class="cart-item-title">${title}</span>
-        </div>
-        <span class="cart-price cart-column">${price}</span>
-        <div class="cart-quantity cart-column">
-            <input class="cart-quantity-input" type="number" value="1">
-            <button class="btn btn-danger" type="button">REMOVE</button>
-        </div>`
-
-    cartRow.innerHTML = cartRowContents
-    cartItems.append(cartRow)
-    cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
-    cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
-}
-
-function updateCartTotal() {
-    let cartItemContainer = document.getElementsByClassName('cart-items')[0]
-    let cartRows = cartItemContainer.getElementsByClassName('cart-row')
-    let total = 0
-    for (let i = 0; i < cartRows.length; i++) {
-        let cartRow = cartRows[i]
-        let priceElement = cartRow.getElementsByClassName('cart-price')[0]
-        let quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
-        let price = parseFloat(priceElement.innerText.replace('R', ''))
-        let quantity = quantityElement.value
-        total = total + (price * quantity)
-    }
-    total = Math.round(total * 100) / 100
-    document.getElementsByClassName('cart-total-price')[0].innerText = 'R' + total
-}
-
-let cart = document.querySelector(".cart");
-let cartDisplay = document.querySelector(".content-section");
-let close = document.querySelector(".exit");
-
-
-cart.addEventListener('click', function showCart(){
-    if(cart){
-        cartDisplay.style.display = "block";
-    }
-})
-
-close.addEventListener('click', function exitCart(){
-    if(close){
-        cartDisplay.style.display = "none";
-    }
-})
-
+onloadCartNumbers()
+displayCart()
