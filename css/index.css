@@ -45,8 +45,13 @@ body{
 
 .cart a{
     filter: invert(43%) sepia(32%) saturate(310%) hue-rotate(347deg) brightness(90%) contrast(88%);
-    margin-left: -21rem;
     width:0rem;
+}
+
+span{
+    position: absolute;
+    margin-left: 37rem;
+    margin-top: -1.5rem;
 }
 
 .carousel-inner,.carousel-item img{
