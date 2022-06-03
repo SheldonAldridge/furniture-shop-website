@@ -102,59 +102,112 @@ span{
 
 .product-container{
     max-width: 650px;
-    justify-content: space-around;
     margin: 0 auto;
     margin-top: 50px;
 }
 
-.products{
+.products svg{
     font-size: 25px;
     color: var(--french-bistre-color);
     margin-left: 10px;
-    margin-left: 10px;
+    margin-right: 10px;
     cursor: pointer;
 }
 
-
 .product-header{
     width: 100%;
-    max-width: 650px;
+    max-width: 100%;
     display: flex;
     justify-content: flex-start;
     border-bottom: 4px solid var(--black-bean-color);
 }
 
 .product-title{
-    width: 45%;
+    width: 68%;
 }
 
 .price{
-    width:15%;
+    width:20%;
     display: flex;
     align-items: center;
 }
 
 .quantity{
     width: 30%;
-    
     display: flex;
     align-items: center;
 }
 
 .total{
     width:10%;
-    
     display: flex;
     align-items: center;
 }
 
 .product{
-    width: 45%;
+    width: 30%;
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
+    align-items: center;  
+}
+
+.product svg{
+    width: 15%;
+    filter: invert(43%) sepia(32%) saturate(310%) hue-rotate(347deg) brightness(90%) contrast(88%);
+}
+
+.product span{
+    width: 18%;
+    margin-top: 8rem;
+    margin-left: 24em;
 }
 
 .product img{
-    max-width:15rem;
+    max-width: 10rem;
+}
+
+.itemVolume{
+    display: flex;
+    margin-left: 444px;
+}
+
+.itemVolume svg{
+    max-width: 10%;
+    margin-top: -167px;
+    filter: invert(43%) sepia(32%) saturate(310%) hue-rotate(347deg) brightness(90%) contrast(88%);
+    
+ }
+ 
+
+.volume span{
+    margin-top: -6rem;
+    margin-left: 30rem;
+}
+
+.totalCost span{
+    margin-top: -6rem;
+}
+
+.cost{
+    margin-top: -6rem;
+    position: absolute;
+    margin-left: 21rem;
+}
+
+.basketTotalContainer{
+    display: flex;
+    justify-content: flex-end;
+    width:100%;
+    padding: 10px 0;
+    margin-left: -1.7rem;
+    border-top: 1px solid var(--black-bean-color);
+}
+
+.basketTotalTitle{
+    width:30%;
+}
+
+.basketTotal{
+    width:10%;
 }
