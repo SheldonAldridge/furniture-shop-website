@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    
     <!-- link to js files -->
-    <script src="js/lookbook/add-to-cart.js" defer></script>
-    <script src="js/lookbook/image-changer-by-color.js" defer></script>
-    <script src="js/lookbook/lookbook-slideslow.js" defer></script>
+    <script src="../js/lookbook/add-to-cart.js" defer></script>
+    <script src="../js/lookbook/image-changer-by-color.js" defer></script>
+    <script src="../js/lookbook/lookbook-slideslow.js" defer></script>
 
     <!-- link to Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- link to stylesheet -->
-    <link rel="stylesheet" href="css/lookbook.css" />
+    <link rel="stylesheet" href="../css/lookbook.css" />
     <title>F-Studio</title>
 
   </head>
@@ -27,7 +27,7 @@
         <div class="container-fluid">
           <img
             class="navbar-brand"
-            src="assets/logo/logo.png"
+            src="../assets/logo/logo.png"
             alt="F-Studio"
           />
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -46,7 +46,7 @@
               </li>
               <li class = "nav-item cart" data-target="#cart">
                 <a class = "nav-link" href="pages/cart.html">
-                    <img src="./assets/icons/cart shopping icon.svg" alt="cart icon"><span>0</span></a>
+                    <img src="assets/icons/cart shopping icon.svg" alt="cart icon"><span>0</span></a>
             </li>
             </ul>
           </div>
@@ -63,38 +63,38 @@
           <div class="row-container row-one">
             <div class="row">
               <div class="col">
-                  <img class="img-fluid bed1" src="./assets/lookbook/beds/Corin Bed-Vienna Dark Blue.png" alt="Corin Bed-Vienna Dark Blue Image" :key="product.id">
+                  <img class="img-fluid bed1" src="../assets/lookbook/beds/Corin Bed-Vienna Dark Blue.png" alt="Corin Bed-Vienna Dark Blue Image" :key="product.id">
                 </div>
               <div class="col">
-                  <img class="img-fluid bed2" src="./assets/lookbook/beds/Miranda Bed - Elephant & Anthracite.png" alt="Miranda Bed - Elephant & Anthracite Image">
+                  <img class="img-fluid bed2" src="../assets/lookbook/beds/Miranda Bed - Elephant & Anthracite.png" alt="Miranda Bed - Elephant & Anthracite Image">
                 </div>
                 
               <div class="col">
-                  <img class="img-fluid bed3" src="./assets/lookbook/beds/Miuzza Bed - Vienna Cream.png" alt="Miuzza Bed - Vienna Cream Image">
+                  <img class="img-fluid bed3" src="../assets/lookbook/beds/Miuzza Bed - Vienna Cream.png" alt="Miuzza Bed - Vienna Cream Image">
                 </div>
             </div>
 
             <div class="row">
                 <div class="col">
-                  <img class="img-fluid bed4" src="./assets/lookbook/beds/Norma Bed - Vienna Beige.png" alt="Norma Bed - Vienna Beige Image">
+                  <img class="img-fluid bed4" src="../assets/lookbook/beds/Norma Bed - Vienna Beige.png" alt="Norma Bed - Vienna Beige Image">
                 </div>
                 <div class="col">
-                  <img class="img-fluid bedside1" src="./assets/lookbook/bedside table/ALPHA 1 DRAWER PEDESTAL-light oak.jpg" alt="ALPHA 1 DRAWER PEDESTAL-light oak Image">
+                  <img class="img-fluid bedside1" src="../assets/lookbook/bedside table/ALPHA 1 DRAWER PEDESTAL-light oak.jpg" alt="ALPHA 1 DRAWER PEDESTAL-light oak Image">
                 </div>
                 <div class="col">
-                  <img class="img-fluid bedside2" src="./assets/lookbook/bedside table/CYRUS 1 DOOR PEDESTAL - wedge.jpg" alt="CYRUS 1 DOOR PEDESTAL - wedge Image">
+                  <img class="img-fluid bedside2" src="../assets/lookbook/bedside table/CYRUS 1 DOOR PEDESTAL - wedge.jpg" alt="CYRUS 1 DOOR PEDESTAL - wedge Image">
                 </div>
             </div>
           
             <div class="row">
                 <div class="col">
-                    <img class="img-fluid bedside3" src="./assets/lookbook/bedside table/GAMMA 2 DRAWER PEDESTAL-light oak.jpg" alt="GAMMA 2 DRAWER PEDESTAL-light oak Image">
+                    <img class="img-fluid bedside3" src="../assets/lookbook/bedside table/GAMMA 2 DRAWER PEDESTAL-light oak.jpg" alt="GAMMA 2 DRAWER PEDESTAL-light oak Image">
                 </div>
                 <div class="col">
-                    <img class="img-fluid bedside4" src="./assets/lookbook/bedside table/GAMMA 3 DRAWER PEDESTAL-walnut.jpg" alt="GAMMA 3 DRAWER PEDESTAL-walnut Image">
+                    <img class="img-fluid bedside4" src="../assets/lookbook/bedside table/GAMMA 3 DRAWER PEDESTAL-walnut.jpg" alt="GAMMA 3 DRAWER PEDESTAL-walnut Image">
                 </div>
                 <div class="col">
-                    <img class="img-fluid bedside5" src="./assets/lookbook/bedside table/TIKKA 1 DRAWER PEDESTAL-mahogany.jpg" alt="ALPHA 1 CYRUS 1 DOOR PEDESTAL - wedge Image">
+                    <img class="img-fluid bedside5" src="../assets/lookbook/bedside table/TIKKA 1 DRAWER PEDESTAL-mahogany.jpg" alt="ALPHA 1 CYRUS 1 DOOR PEDESTAL - wedge Image">
                 </div>
             </div>
           </div>
@@ -102,25 +102,25 @@
             <div class="row-container row-two">
             <div class="row">
               <div class="col">
-                  <img class="img-fluid chair1" src="./assets/lookbook/chair/ALEXA CHAIR - GRIJS.jpg" alt="ALEXA CHAIR - GRIJS Image">
+                  <img class="img-fluid chair1" src="../assets/lookbook/chair/ALEXA CHAIR - GRIJS.jpg" alt="ALEXA CHAIR - GRIJS Image">
                 </div>
               <div class="col">
-                  <img class="img-fluid chair2" src="./assets/lookbook/chair/JEAN STOOL - ANTRACIET.jpg" alt="JEAN STOOL - ANTRACIET Image">
+                  <img class="img-fluid chair2" src="../assets/lookbook/chair/JEAN STOOL - ANTRACIET.jpg" alt="JEAN STOOL - ANTRACIET Image">
                 </div>
               <div class="col">
-                  <img class="img-fluid chair3" src="./assets/lookbook/chair/MAXIME CHAIR - ECRU.jpg" alt="Miuzza Bed - Vienna Cream Image">
+                  <img class="img-fluid chair3" src="../assets/lookbook/chair/MAXIME CHAIR - ECRU.jpg" alt="Miuzza Bed - Vienna Cream Image">
                 </div>
             </div>
 
             <div class="row">
               <div class="col">
-                  <img class="img-fluid chair4" src="./assets/lookbook/chair/OSCAR CHAIR - ANTRACIET.jpg" alt="OSCAR CHAIR - ANTRACIET Image">
+                  <img class="img-fluid chair4" src="../assets/lookbook/chair/OSCAR CHAIR - ANTRACIET.jpg" alt="OSCAR CHAIR - ANTRACIET Image">
                 </div>
               <div class="col">
-                  <img class="img-fluid coffee-table1" src="./assets/lookbook/coffee table/CADEN 120x60cm COFFEE TABLE-Light Oak.jpg" alt="Miuzza Bed - Vienna Cream Image">
+                  <img class="img-fluid coffee-table1" src="../assets/lookbook/coffee table/CADEN 120x60cm COFFEE TABLE-Light Oak.jpg" alt="Miuzza Bed - Vienna Cream Image">
                 </div>
                 <div class="col">
-                  <img class="img-fluid coffee-table2" src="./assets/lookbook/coffee table/JUDY 100x55cm COFFEE TABLE-light oak.jpg" alt="JUDY COFFEE TABLE-light oak">
+                  <img class="img-fluid coffee-table2" src="../assets/lookbook/coffee table/JUDY 100x55cm COFFEE TABLE-light oak.jpg" alt="JUDY COFFEE TABLE-light oak">
                 </div>
             </div>
           </div>
@@ -128,8 +128,8 @@
 
           <div class = "prod-nav">
               <div class = "num-nav">
-                <button class="left-btn"><img src="./assets/icons/left arrow.svg" alt="right arrow" onclick="plusSlide(-1)"></button>
-              <button class="right-btn"><img src="./assets/icons/right arrow.svg" alt="right arrow" onclick="plusSlide(+1)"></button>
+                <button class="left-btn"><img src="../assets/icons/left arrow.svg" alt="right arrow" onclick="plusSlide(-1)"></button>
+              <button class="right-btn"><img src="../assets/icons/right arrow.svg" alt="right arrow" onclick="plusSlide(+1)"></button>
             </div>
           </div>
 
@@ -137,9 +137,9 @@
             <!--Corin Bed-->
             <div class = "card corin-bed">
               <div class = "close">X</div>
-              <img class="card-img-top bed-one shop-item-image" src="./assets/lookbook/beds/large/Corin Bed-Vienna Dark Blue-large.png" alt="Corin Bed-Vienna Dark Blue Image">
-              <img class="card-img-top bed-two shop-item-image" src="./assets/lookbook/beds/large/Corin Bed-Vienna Elephant-large.png" alt="Corin Bed-Vienna Elephant Image">
-              <img class="card-img-top bed-three shop-item-image" src="./assets/lookbook/beds/large/Corin Bed-Xangai White - large.png" alt="Corin Bed-Vienna Xangai White Image">
+              <img class="card-img-top bed-one shop-item-image" src="../assets/lookbook/beds/large/Corin Bed-Vienna Dark Blue-large.png" alt="Corin Bed-Vienna Dark Blue Image">
+              <img class="card-img-top bed-two shop-item-image" src="../assets/lookbook/beds/large/Corin Bed-Vienna Elephant-large.png" alt="Corin Bed-Vienna Elephant Image">
+              <img class="card-img-top bed-three shop-item-image" src="../assets/lookbook/beds/large/Corin Bed-Xangai White - large.png" alt="Corin Bed-Vienna Xangai White Image">
               <div class="card-body">
                 <h5 class = "card-titel shop-item-title">Corin Bed</h5>
                   <div class = "blue-color"></div>
@@ -158,8 +158,8 @@
       <!--Miranda Bed-->
       <div class = "card miranda-bed">
         <div class = "close miranda-close">X</div>
-        <img class="card-img-top miranda-one shop-item-image" src="./assets/lookbook/beds/large/Miranda Bed - Elephant & Anthracite-large.png" alt="Miranda Bed - Elephant & Anthracite Image">
-        <img class="card-img-top miranda-two shop-item-image" src="./assets/lookbook/beds/large/Miranda Bed - Lime & Tobacco-large.png" alt="Miranda Bed - Lime & Tobacco Image">
+        <img class="card-img-top miranda-one shop-item-image" src="../assets/lookbook/beds/large/Miranda Bed - Elephant & Anthracite-large.png" alt="Miranda Bed - Elephant & Anthracite Image">
+        <img class="card-img-top miranda-two shop-item-image" src="../assets/lookbook/beds/large/Miranda Bed - Lime & Tobacco-large.png" alt="Miranda Bed - Lime & Tobacco Image">
         <div class="card-body">
           <h5 class = "card-titel shop-item-title">Miranda Bed</h5>
           <div class = "card-text">
@@ -178,8 +178,8 @@
      <!--Miuzza Bed-->
      <div class = "card miuzza-bed">
       <div class = "close miuzza-close">X</div>
-      <img class="card-img-top miuzza-one shop-item-image" src="./assets/lookbook/beds/large/Miuzza Bed - Vienna Cream-large.png" alt="Miuzza Bed - Vienna Cream Image">
-      <img class="card-img-top miuzza-two shop-item-image" src="./assets/lookbook/beds/large/Miuzza Bed -Vienna Deep Blue-large.png" alt="Miuzza Bed - Vienna Deep Image">
+      <img class="card-img-top miuzza-one shop-item-image" src="../assets/lookbook/beds/large/Miuzza Bed - Vienna Cream-large.png" alt="Miuzza Bed - Vienna Cream Image">
+      <img class="card-img-top miuzza-two shop-item-image" src="../assets/lookbook/beds/large/Miuzza Bed -Vienna Deep Blue-large.png" alt="Miuzza Bed - Vienna Deep Image">
       <div class="card-body">
         <h5 class = "card-titel">Miuzza Bed</h5>
         <div class = "card-text">
@@ -198,9 +198,9 @@
   <!--Norma Bed-->
   <div class = "card norma-bed">
     <div class = "close norma-close">X</div>
-    <img class="card-img-top norma-one shop-item-image" src="./assets/lookbook/beds/large/Norma Bed - Vienna Beige-large.png" alt="Norma Bed - Vienna Beige-large Image">
-    <img class="card-img-top norma-two shop-item-image" src="./assets/lookbook/beds/large/Norma Bed - Vienna Deep Blue-large.png" alt="Norma Bed - Vienna Deep Blue-large Image">
-    <img class="card-img-top norma-three" src="assets/lookbook/beds/large/Norma Bed - Vienna Elephant-large.png" alt="Norma Bed - Vienna Elephant Image">
+    <img class="card-img-top norma-one shop-item-image" src="../assets/lookbook/beds/large/Norma Bed - Vienna Beige-large.png" alt="Norma Bed - Vienna Beige-large Image">
+    <img class="card-img-top norma-two shop-item-image" src="../assets/lookbook/beds/large/Norma Bed - Vienna Deep Blue-large.png" alt="Norma Bed - Vienna Deep Blue-large Image">
+    <img class="card-img-top norma-three" src="../assets/lookbook/beds/large/Norma Bed - Vienna Elephant-large.png" alt="Norma Bed - Vienna Elephant Image">
     <div class="card-body">
       <h5 class = "card-titel">Norma Bed</h5>
       <div class = "card-text">
@@ -220,8 +220,8 @@
 <!--alpha Bedside Table-->
 <div class = "card alpha-bedside">
   <div class = "close alpha-close">X</div>
-  <img class="card-img-top alpha-one shop-item-image" src="./assets/lookbook/bedside table/ALPHA 1 DRAWER PEDESTAL-light oak.jpg" alt="ALPHA 1 DRAWER PEDESTAL-light oak Image">
-  <img class="card-img-top alpha-two shop-item-image" src="./assets/lookbook/bedside table/ALPHA 1 DRAWER PEDESTAL-wedge.jpg" alt="ALPHA 1 DRAWER PEDESTAL Image">
+  <img class="card-img-top alpha-one shop-item-image" src="../assets/lookbook/bedside table/ALPHA 1 DRAWER PEDESTAL-light oak.jpg" alt="ALPHA 1 DRAWER PEDESTAL-light oak Image">
+  <img class="card-img-top alpha-two shop-item-image" src="../assets/lookbook/bedside table/ALPHA 1 DRAWER PEDESTAL-wedge.jpg" alt="ALPHA 1 DRAWER PEDESTAL Image">
   <div class="card-body">
     <h5 class = "card-titel">Alpha Bedside</h5>
     <div class = "card-text">
@@ -240,9 +240,9 @@
 <!--cyrus Bedside Table-->
 <div class = "card cyrus-bedside">
   <div class = "close cyrus-close">X</div>
-  <img class="card-img-top cyrus-one shop-item-image" src="./assets/lookbook/bedside table/CYRUS 1 DOOR PEDESTAL - wedge.jpg" alt="CYRUS 1 DOOR PEDESTAL - wedge Image">
-  <img class="card-img-top cyrus-two shop-item-image" src="./assets/lookbook/bedside table/CYRUS 1 DOOR PEDESTAL - white.jpg" alt="CYRUS 1 DOOR PEDESTAL - white Image">
-  <img class="card-img-top cyrus-three shop-item-image" src="./assets/lookbook/bedside table/CYRUS 1 DOOR PEDESTAL -oak.jpg" alt="CYRUS 1 DOOR PEDESTAL - oak Image">
+  <img class="card-img-top cyrus-one shop-item-image" src="../assets/lookbook/bedside table/CYRUS 1 DOOR PEDESTAL - wedge.jpg" alt="CYRUS 1 DOOR PEDESTAL - wedge Image">
+  <img class="card-img-top cyrus-two shop-item-image" src="../assets/lookbook/bedside table/CYRUS 1 DOOR PEDESTAL - white.jpg" alt="CYRUS 1 DOOR PEDESTAL - white Image">
+  <img class="card-img-top cyrus-three shop-item-image" src="../assets/lookbook/bedside table/CYRUS 1 DOOR PEDESTAL -oak.jpg" alt="CYRUS 1 DOOR PEDESTAL - oak Image">
   <div class="card-body">
     <h5 class = "card-titel">Cyrus Bedside</h5>
     <div class = "card-text">
@@ -262,9 +262,9 @@
 <!--gamma2 Bedside Table-->
 <div class = "card gamma-bedside">
   <div class = "close gamma-close">X</div>
-  <img class="card-img-top gamma-one shop-item-image" src="./assets/lookbook/bedside table/GAMMA 2 DRAWER PEDESTAL-light oak.jpg" alt="GAMMA 2 DRAWER PEDESTAL-light oak Image">
-  <img class="card-img-top gamma-two shop-item-image" src="./assets/lookbook/bedside table/GAMMA 2 DRAWER PEDESTAL-wedge.jpg" alt="GAMMA 2 DRAWER PEDESTAL-wedge Image">
-  <img class="card-img-top gamma-three shop-item-image" src="./assets/lookbook/bedside table/GAMMA 2 DRAWER PEDESTAL-white oak.jpg" alt="GAMMA 2 DRAWER PEDESTAL-white oak Image">
+  <img class="card-img-top gamma-one shop-item-image" src="../assets/lookbook/bedside table/GAMMA 2 DRAWER PEDESTAL-light oak.jpg" alt="GAMMA 2 DRAWER PEDESTAL-light oak Image">
+  <img class="card-img-top gamma-two shop-item-image" src="../assets/lookbook/bedside table/GAMMA 2 DRAWER PEDESTAL-wedge.jpg" alt="GAMMA 2 DRAWER PEDESTAL-wedge Image">
+  <img class="card-img-top gamma-three shop-item-image" src="../assets/lookbook/bedside table/GAMMA 2 DRAWER PEDESTAL-white oak.jpg" alt="GAMMA 2 DRAWER PEDESTAL-white oak Image">
   <div class="card-body">
     <h5 class = "card-titel">Gamma Bedside</h5>
     <div class = "card-text">
@@ -284,9 +284,9 @@
 <!--gamma3 Bedside Table-->
 <div class = "card gamma3-bedside">
   <div class = "close gamma3-close">X</div>
-  <img class="card-img-top gamma3-one shop-item-image" src="./assets/lookbook/bedside table/GAMMA 3 DRAWER PEDESTAL-walnut.jpg" alt="GAMMA 3 DRAWER PEDESTAL-walnut Image">
-  <img class="card-img-top gamma3-two shop-item-image" src="./assets/lookbook/bedside table/GAMMA 3 DRAWER PEDESTAL-wedge.jpg" alt="GAMMA 3 DRAWER PEDESTAL-wedge Image">
-  <img class="card-img-top gamma3-three shop-item-image" src="./assets/lookbook/bedside table/GAMMA 3 DRAWER PEDESTAL-white.jpg" alt="GAMMA 3 DRAWER PEDESTAL-white oak Image">
+  <img class="card-img-top gamma3-one shop-item-image" src="../assets/lookbook/bedside table/GAMMA 3 DRAWER PEDESTAL-walnut.jpg" alt="GAMMA 3 DRAWER PEDESTAL-walnut Image">
+  <img class="card-img-top gamma3-two shop-item-image" src="../assets/lookbook/bedside table/GAMMA 3 DRAWER PEDESTAL-wedge.jpg" alt="GAMMA 3 DRAWER PEDESTAL-wedge Image">
+  <img class="card-img-top gamma3-three shop-item-image" src="../assets/lookbook/bedside table/GAMMA 3 DRAWER PEDESTAL-white.jpg" alt="GAMMA 3 DRAWER PEDESTAL-white oak Image">
   <div class="card-body">
     <h5 class = "card-titel">Gamma 3 Bedside</h5>
     <div class = "card-text">
@@ -306,8 +306,8 @@
 <!--takka Bedside Table-->
 <div class = "card takka-bedside">
   <div class = "close takka-close">X</div>
-  <img class="card-img-top takka-one shop-item-image" src="./assets/lookbook/bedside table/TIKKA 1 DRAWER PEDESTAL-mahogany.jpg" alt="TIKKA 1 DRAWER PEDESTAL-mahogany Image">
-  <img class="card-img-top takka-two shop-item-image" src="./assets/lookbook/bedside table/TIKKA 1 DRAWER PEDESTAL-walnut.jpg" alt="TIKKA 1 DRAWER PEDESTAL-walnut Image">
+  <img class="card-img-top takka-one shop-item-image" src="../assets/lookbook/bedside table/TIKKA 1 DRAWER PEDESTAL-mahogany.jpg" alt="TIKKA 1 DRAWER PEDESTAL-mahogany Image">
+  <img class="card-img-top takka-two shop-item-image" src="../assets/lookbook/bedside table/TIKKA 1 DRAWER PEDESTAL-walnut.jpg" alt="TIKKA 1 DRAWER PEDESTAL-walnut Image">
   <div class="card-body">
     <h5 class = "card-titel">Takka Bedside</h5>
     <div class = "card-text">
@@ -326,8 +326,8 @@
 <!--alexia chair-->
 <div class = "card alexia-chair">
   <div class = "close alexia-close">X</div>
-  <img class="card-img-top alexia-one shop-item-image" src="./assets/lookbook/chair/large/ALEXA CHAIR - GRIJS-large.jpg" alt="ALEXA CHAIR - GRIJS Image">
-  <img class="card-img-top alexia-two shop-item-image" src="./assets/lookbook/chair/large/ALEXA CHAIR - OUDROZE-large.jpg" alt="TIKKA 1 DRAWER PEDESTAL-walnut Image">
+  <img class="card-img-top alexia-one shop-item-image" src="../assets/lookbook/chair/large/ALEXA CHAIR - GRIJS-large.jpg" alt="ALEXA CHAIR - GRIJS Image">
+  <img class="card-img-top alexia-two shop-item-image" src="../assets/lookbook/chair/large/ALEXA CHAIR - OUDROZE-large.jpg" alt="TIKKA 1 DRAWER PEDESTAL-walnut Image">
   <div class="card-body">
     <h5 class = "card-titel">Alexia Chair</h5>
     <div class = "card-text">
@@ -346,8 +346,8 @@
 <!--jean chair-->
 <div class = "card jean-chair">
   <div class = "close jean-close">X</div>
-  <img class="card-img-top jean-one shop-item-image" src="./assets/lookbook/chair/large/JEAN STOOL - ANTRACIET-large.jpg" alt="ALEXA CHAIR - GRIJS Image">
-  <img class="card-img-top jean-two shop-item-image" src="./assets/lookbook/chair/large/JEAN STOOL - TAUPE-large.jpg" alt="TIKKA 1 DRAWER PEDESTAL-walnut Image">
+  <img class="card-img-top jean-one shop-item-image" src="../assets/lookbook/chair/large/JEAN STOOL - ANTRACIET-large.jpg" alt="ALEXA CHAIR - GRIJS Image">
+  <img class="card-img-top jean-two shop-item-image" src="../assets/lookbook/chair/large/JEAN STOOL - TAUPE-large.jpg" alt="TIKKA 1 DRAWER PEDESTAL-walnut Image">
   <div class="card-body">
     <h5 class = "card-titel">Jean Chair</h5>
     <div class = "card-text">
@@ -366,8 +366,8 @@
 <!--maxime chair-->
 <div class = "card maxime-chair">
   <div class = "close maxime-close">X</div>
-  <img class="card-img-top maxime-one shop-item-image" src="/assets/lookbook/chair/large/MAXIME CHAIR - ECRU-large.jpg" alt="ALEXA CHAIR - GRIJS Image">
-  <img class="card-img-top maxime-two shop-item-image" src="/assets/lookbook/chair/large/MAXIME CHAIR - LICHTGRIJS-large.jpg" alt="TIKKA 1 DRAWER PEDESTAL-walnut Image">
+  <img class="card-img-top maxime-one shop-item-image" src="../assets/lookbook/chair/large/MAXIME CHAIR - ECRU-large.jpg" alt="ALEXA CHAIR - GRIJS Image">
+  <img class="card-img-top maxime-two shop-item-image" src="../assets/lookbook/chair/large/MAXIME CHAIR - LICHTGRIJS-large.jpg" alt="TIKKA 1 DRAWER PEDESTAL-walnut Image">
   <div class="card-body">
     <h5 class = "card-titel">Maxime Chair</h5>
     <div class = "card-text">
@@ -386,8 +386,8 @@
 <!--oscar chair-->
 <div class = "card oscar-chair">
   <div class = "close oscar-close">X</div>
-  <img class="card-img-top oscar-one shop-item-image" src="/assets/lookbook/chair/large/OSCAR CHAIR - ANTRACIET-large.jpg" alt="ALEXA CHAIR - GRIJS Image">
-  <img class="card-img-top oscar-two shop-item-image" src="/assets/lookbook/chair/large/OSCAR CHAIR - LICHTGRIJS-large.jpg" alt="TIKKA 1 DRAWER PEDESTAL-walnut Image">
+  <img class="card-img-top oscar-one shop-item-image" src="../assets/lookbook/chair/large/OSCAR CHAIR - ANTRACIET-large.jpg" alt="ALEXA CHAIR - GRIJS Image">
+  <img class="card-img-top oscar-two shop-item-image" src="../assets/lookbook/chair/large/OSCAR CHAIR - LICHTGRIJS-large.jpg" alt="TIKKA 1 DRAWER PEDESTAL-walnut Image">
   <div class="card-body">
     <h5 class = "card-titel">Oscar Chair</h5>
     <div class = "card-text">
@@ -406,8 +406,8 @@
 <!--caden coffee table-->
 <div class = "card caden-coffee">
   <div class = "close caden-close">X</div>
-  <img class="card-img-top caden-one shop-item-image" src="/assets/lookbook/coffee table/large/CADEN 120x60cm COFFEE TABLE-Light Oak-large.jpg" alt="ALEXA CHAIR - GRIJS Image">
-  <img class="card-img-top caden-two shop-item-image" src="/assets/lookbook/coffee table/CADEN 120x60cm COFFEE TABLE-Wenge.jpg" alt="TIKKA 1 DRAWER PEDESTAL-walnut Image">
+  <img class="card-img-top caden-one shop-item-image" src="../assets/lookbook/coffee table/large/CADEN 120x60cm COFFEE TABLE-Light Oak-large.jpg" alt="ALEXA CHAIR - GRIJS Image">
+  <img class="card-img-top caden-two shop-item-image" src="../assets/lookbook/coffee table/CADEN 120x60cm COFFEE TABLE-Wenge.jpg" alt="TIKKA 1 DRAWER PEDESTAL-walnut Image">
   <div class="card-body">
     <h5 class = "card-titel">Caden Coffee Table</h5>
     <div class = "card-text">
@@ -426,8 +426,8 @@
 <!--judy coffee table-->
 <div class = "card judy-coffee">
   <div class = "close judy-close">X</div>
-  <img class="card-img-top judy-one shop-item-image" src="/assets/lookbook/coffee table/large/KAMI 100x40cm COFFEE TABLE-Light Oak-Light Grey-large.jpg" alt="ALEXA CHAIR - GRIJS Image">
-  <img class="card-img-top judy-two shop-item-image" src="/assets/lookbook/coffee table/large/KAMI 100x40cm COFFEE TABLE-Walnut Black-large.jpg" alt="TIKKA 1 DRAWER PEDESTAL-walnut Image">
+  <img class="card-img-top judy-one shop-item-image" src="../assets/lookbook/coffee table/large/KAMI 100x40cm COFFEE TABLE-Light Oak-Light Grey-large.jpg" alt="ALEXA CHAIR - GRIJS Image">
+  <img class="card-img-top judy-two shop-item-image" src="../assets/lookbook/coffee table/large/KAMI 100x40cm COFFEE TABLE-Walnut Black-large.jpg" alt="TIKKA 1 DRAWER PEDESTAL-walnut Image">
   <div class="card-body">
     <h5 class = "card-titel">Judy Coffee Table</h5>
     <div class = "card-text">
