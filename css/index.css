@@ -35,12 +35,12 @@ body{
 }
 
 .nav-item{
-    padding-left:10rem;
+    padding-left:3rem;
 }
 
 .nav-item img{
  width:20px;
- margin-left: 35rem;
+ margin-left: 30rem;
 }
 
 .cart a{
@@ -50,18 +50,20 @@ body{
 
 span{
     position: absolute;
-    margin-left: 37rem;
+    margin-left: 32rem;
     margin-top: -1.5rem;
 }
 
 .carousel-inner,.carousel-item img{
-    height: 70rem;
+    object-fit:cover;
+    height: 40rem;
+    
 }
 
 .h1{
     position: absolute;
-    margin-top: 61rem;
-    margin-left: 60rem;
+    margin-top: 32rem;
+    margin-left: 45rem;
     z-index: 1;
     font-size: 50px;
     color: rgba(47, 15, 2, 0.5);
@@ -69,6 +71,7 @@ span{
 
 .carousel-control-prev-icon,.carousel-control-next-icon{
     filter: invert(100%) sepia(44%) saturate(1626%) hue-rotate(345deg) brightness(103%) contrast(103%);
+    margin-right:32rem;
 }
 
 .carousel-indicators .active{
@@ -81,7 +84,6 @@ width:3rem;
     text-align: center;
     color: var(--french-bistre-color);
     margin-top: 3rem;
-    margin-left: 35rem;
 }
 
 .serve{
@@ -100,7 +102,7 @@ width:3rem;
     text-align: left;
     font-family:Poor Richard;
     color:var(--french-bistre-color);
-    margin-left:60rem;
+    margin-left:41rem;
     font-size: 30px;
 }
 
@@ -110,7 +112,7 @@ width:3rem;
     text-align: left;
     font-family:Poor Richard;
     color:var(--french-bistre-color);
-    margin-left:60rem;
+    margin-left:41rem;
     font-size: 30px;
 }
 
@@ -136,7 +138,7 @@ width:3rem;
 
 .container{
     margin-top:10rem;
-    margin-left:21rem;
+    margin-left:20rem;
 
 }
 
@@ -158,7 +160,7 @@ width:3rem;
 }
 
 .container-collection{
-    margin-left: 30rem;
+    margin-left: 10rem;
     margin-top: 3rem;
 }
 
@@ -178,7 +180,7 @@ width:3rem;
 .bedside img{
   width:24.5rem;
   height:20rem;
-  margin-left: 10rem; 
+  margin-left: -9.5rem; 
 }
 
 .coffee-table img{
@@ -194,7 +196,7 @@ width:3rem;
 .container-footer{
     display: flex;
     flex-direction: row;
-    margin-left:50rem;
+    margin-left:25rem;
 }
 
 .collection h3,.blog h3,.contact h3{
