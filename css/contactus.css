@@ -35,12 +35,12 @@ body{
 }
 
 .nav-item{
-    padding-left:10rem;
+    padding-left:3rem;
 }
 
 .nav-item img{
  width:20px;
- margin-left: 35rem;
+ margin-left: 30rem;
 }
 
 .cart a{
@@ -50,7 +50,7 @@ body{
 
 span{
     position: absolute;
-    margin-left: 37rem;
+    margin-left: 32rem;
     margin-top: -1.5rem;
 }
 
@@ -65,9 +65,9 @@ span{
 
 .h1{
 position: absolute;
-margin-top: -30rem;
-margin-left:20rem;
-font-size: 100px;
+margin-top: -20rem;
+margin-left:10rem;
+font-size: 80px;
 color: var(--dark-sienna-color);
 }
 
@@ -78,7 +78,7 @@ color: var(--dark-sienna-color);
 
 .icons{
     display: flex;
-    margin-left:20%;
+    margin-left: 8%;
 }
 
 .icons img{
@@ -116,6 +116,7 @@ color: var(--dark-sienna-color);
     position: absolute;
     background-color: var(--french-bistre-color);
     width: 100%;
+    margin-bottom: 30rem;
 }
 
 .form{
@@ -123,7 +124,7 @@ color: var(--dark-sienna-color);
     flex-direction: column;
     padding-bottom:2rem;
     margin-top: 3rem;
-    margin-left: 40rem;
+    margin-left: 16rem;
 }
 
 #fname,#email, #subject, #subject, #message{
