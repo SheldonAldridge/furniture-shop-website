@@ -43,14 +43,19 @@ body{
  margin-left: 35rem;
 }
 
+.cart img{
+    margin-left: -1rem;
+}
+
 .cart a{
     filter: invert(43%) sepia(32%) saturate(310%) hue-rotate(347deg) brightness(90%) contrast(88%);
     width:0rem;
+    margin-left:-1rem;
 }
 
 span{
     position: absolute;
-    margin-left: 37rem;
+    margin-left: 1rem;
     margin-top: -1.5rem;
 }
 
