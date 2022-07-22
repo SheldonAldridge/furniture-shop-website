@@ -164,8 +164,8 @@ span{
 
 .product span{
     width: 18%;
-    margin-top: 8rem;
-    margin-left: 24em;
+    margin-top: 9rem;
+    margin-left: 18em;
 }
 
 .product img{
@@ -192,6 +192,7 @@ span{
 
 .totalCost span{
     margin-top: -6rem;
+    display: none;
 }
 
 .cost{
