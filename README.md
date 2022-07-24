@@ -9,16 +9,10 @@ It has the history of the comapny, how it started and what their values are.
 - Home Page
 - About Us Page
 - LookBook page
-
-# Website Pages To Come
-
 - Cart Page
 
 # Functions added
 
-- Pop up images of look book page(Progress pending)
-
-# functions still to come
-
+- Pop up images of look book page
 - Add to cart button adds to cart page with list
 - Cart calculates total cost of items
