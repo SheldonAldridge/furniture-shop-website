@@ -17,8 +17,7 @@ body{
 @font-face {
     font-family:Perpetua Titling MT;
     src: url(../assets/fonts/PERTIBD.TTF);
-    font-family:Poor Richard;
-    src: url(../assets/fonts/POORICH.TTF);
+
 }
 
 .navbar-brand{
@@ -107,7 +106,7 @@ margin-top: -41rem;
 }
 
 .cost{
-    margin-left: -45rem;
+    margin-left: -47rem;
     margin-top: -1rem !important;
 }
 
@@ -119,6 +118,10 @@ margin-top: -41rem;
     margin-top: -6rem;
     font-size: 25px;
     position: absolute;
+}
+
+.corinBed{
+    margin-top: -4rem;
 }
 
 .card-text{
@@ -282,7 +285,7 @@ FURNITURE COLOURS
     background-color: var(--camel-color);
     color: var(--black-bean-color);
     font-size: 20px;
-    margin-left: -50rem;
+    margin-left: -51rem;
     margin-top:2rem;
 }
 

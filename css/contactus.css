@@ -55,8 +55,8 @@ span{
 }
 
 .hero-image{
-  margin-left:-3rem;
-  width:100.5vw;
+  margin-left:-1rem;
+  width:99.3vw;
   height: 60vh;
   background-image: url("../assets/contact page/hero-image.jpg");
   background-size: cover;
@@ -168,7 +168,7 @@ color: var(--dark-sienna-color);
 .container-footer{
     display: flex;
     flex-direction: row;
-    margin-left:50rem;
+    margin-left:25rem;
 }
 
 .collection h3,.blog h3,.contact h3{

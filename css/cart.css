@@ -192,7 +192,6 @@ span{
 
 .totalCost span{
     margin-top: -6rem;
-    display: none;
 }
 
 .cost{
@@ -216,4 +215,8 @@ span{
 
 .basketTotal{
     width:10%;
+}
+
+.totalCost{
+    margin-left:36rem;
 }
